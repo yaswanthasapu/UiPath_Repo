@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1665,10518</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1666,10638</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_Page_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -122,7 +122,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Login_Page" sap:VirtualizedContainerService.HintSize="1675,10453" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_Page" sap:VirtualizedContainerService.HintSize="1676,10573" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://dev2-v2.iviscloud.net" Name="url" />
       <Variable x:TypeArguments="x:String" Name="CustomerName_Alert" />
@@ -138,13 +138,13 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: iVIS" sap:VirtualizedContainerService.HintSize="1613,10365" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: iVIS" sap:VirtualizedContainerService.HintSize="1614,10485" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1579,10125" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1580,10245" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="HomePageexist" />
             </Sequence.Variables>
@@ -154,7 +154,8 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT loginId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1517,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[email]" Version="V3">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1518,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Successfully Opened&quot;]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT loginId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1518,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[email]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/" CVScreenId="7afaf0da-417c-4043-a7cc-ce569944f1d1" CvElementArea="1195, 524, 502, 51" CvType="InputBox" DesignTimeRectangle="1197, 526, 498, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="30280f3f-4120-4316-867a-1451353fa345" ImageBase64="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" InformativeScreenshot="8adb642238e11548460518d77904ca2e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, Image" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -165,7 +166,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[password]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1518,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[password]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/" CVScreenId="a5d8efdf-4d9b-45e6-a375-5f19c212b72f" CvElementArea="1197, 594, 483, 54" CvType="InputBox" DesignTimeRectangle="1197, 596, 436, 50" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="931462ec-515b-4c61-a2be-3ac33be2fc66" InformativeScreenshot="e61217b2564cd71cede6fb6bf06f1152.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -176,7 +177,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="1516.8,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="1518,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/" CVScreenId="5ca15f59-1225-44f0-8570-3f82d2a835e2" CvElementArea="1194, 732, 503, 57" CvTextArea="1410, 751, 71, 21" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1197, 734, 498, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium submitButton css-n1nvfa' aaname='Login' check:innerText='LOGIN' /&gt;" Guid="4636988e-128f-45be-8ff7-fa4e67135b3a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfYAAAA6CAYAAABCtnvHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVXSURBVHhe7d3PSxxnGMDx/j09xJxS9JoE2vMqTaEsNrcIPUk9edhAIiVSKAhCIIeEwEIhEtAUUQgIJmLBkMOeFkIHgqwoBoWVwCyBp+8zO7O+s/vqjroz3bx8H/hA3PlBcgjffWfW2W+EYRiGYRhvhrAzDMMwjEdD2BmGYRjGo3GG/dXbupQfLMn1yUX59ucFAAAwZLTR2mpttj09YX9UfSMjExW58cNdGb19R8ZujgMAgCGjjdZWa7O13cmkwq7VHxmvOE8AAACG07WJ+52VeyrsuqT/ztTfdRAAABhO2m5tuE4q7Hq9nsvvAAB8XbTd2nCdVNj1ZrzrAAAAMNy04TqEHQAADxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2oFCvJYj+l53IzqJr+1mmpPJ8W2p7JxKG0QnaE7akuVeXjeqiTDqP61KuyMLfNQkOzHm+xOfQ+dKS8Hhfav+syh/3eo9beH/S3u/j665t8b8n3JWVWft1t5WP0VkkWHVvB3B1hB0o1CXCPrssOwet6KhomkcSBLuRw6b1+qe6VM+J6/RfNWlYbwo05M7zSEsaG0+kZB3bN+w6xzVZKNvbehF2IH+EHSjUBcM+a/aPYxwe1KT6cKpnn9JDK/xnrJynV3clafph/bVzVT5274msBe2ANzbmUtsyhd1M8/2z1BuCboQdyB9hBwp1kbDPycZetLOEJqjTzn0Scyaacdw/vZM5e9v8Ozlsb5HGZnol7jI5O9dzWT9r2HW1H6ym3xTYCDuQP8IOFCp72Esv/o1X2fuykeH+9djstjSi/UXqL5OV/ZS8+BC/uLfd583B2fqH/USax9EfzBzJ1ry9zynCDuSPsAOFyhr2qU4E5cNq31V2mxXx3U35VV+b2XTE/uL6h31XVqwrA2fdbyfsQP4IO1CorGFfktrnaEdprGcPcml9v32QhlZfM6v+9uzLWp8Ptp0nU9jNz/a9fNftA8IO5I+wA4XKGPZystLOci/esliTZnTckWz9Pi6VraPoJ2maFbRr/4yyhl2vGnT2NdNYT99vJ+xA/gg7UKiMYe8E+rJhbx/XiWxhYTfKz2Snc7/d/D0en15xIOxA/gg7UKghXLF3jrHHCrVxobAr69f0ol/Bm2m/TtiB/BF2oFAZw35zWerxk+Fyv8c+syw78YNqguAovkd+xbAbpef1nvvthB3IH2EHCpU17Jf5VPy4VK/8qXh3qC8T9u777frwmjXCDuSOsAOFyhp2s+J9ebraHsjvsXc/uMZpkGFX1oNzpCWH8RPyCDuQH8IOFCp72Af25Dkr+P0e+Tr4sBszZp/kmnw8hB3ID2EHCnWRsBs5PCu+GWy6nxWv3/y2nuw3wLAbpcfpD+gRdiA/hB0oVBJCM2FLws9u9WXrmK5vdwtz+Ha3xrF1HjPh3nbqU/RXDbua7nywj7ADeSLsQKGssJ8zveEb1Pex/ylPN+tRyHu+j13fMNS25en8bz3HDSLs0e2CoP0GgrAD+SHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4xBn265OLMnr7jvMAAAAwnLTd2nCdVNjLD5bkxve/OA8CAADDSdutDddJhf3V27qMjFecBwEAgOF0beJ+1HCdVNh1HlXfyMhExdT/roze+tF5AgAA8P8avfVT1GqNurY7mZ6w62j1dUmv1+v1ZjwAABgu2mhtdbJST8YZdoZhGIZhvsYR+Q/1RQnUHB8ZHgAAAABJRU5ErkJggg==" InformativeScreenshot="da385cd4c4a2d110abb017e6fc3ecd89.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, Image" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -187,9 +188,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="1516.8,9344.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="1518,9349" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1014.4,9101.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1014,9107" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="Created_Successfully" />
                     <Variable x:TypeArguments="x:String" Name="Created_SG" />
@@ -199,7 +200,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="952,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="8449cd35-daa5-4010-942d-c3b1b7abfc56" CvElementArea="1838, 115, 26, 24" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="ArrowButton" DesignTimeRectangle="1717, 89, 150, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' type='' class='dropbtn d-flex mt-1' aaname='' check:text='Veera Rangina' /&gt;" Guid="f80f1174-4208-46dd-988e-cfad4e6a047a" InformativeScreenshot="367ed5d535ce70c95c5ec6d2f1bd0e7c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -791,13 +792,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,355.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,355" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="387.2,264.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
+                  <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="388,265" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
