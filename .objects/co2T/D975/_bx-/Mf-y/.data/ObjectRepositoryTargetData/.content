@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8vf--W2dWkmHc-uZlC9B4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://iportal2.iviscloud.net/dashboard" CVScreenId="1247f59c-f873-48ae-af16-6a58f2651fbb" CvElementArea="970, 603, 84, 52" CvTextArea="995, 619, 33, 17" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 605, 80, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary nextPrevBtn text-black css-120ms95' check:innerText='YES' /&gt;" Guid="a2eb2e36-ed9d-486c-9abd-903f07646fb7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4e06579fb1d94bb1780db7569393c173.png" xmlns="">0vMKQSCj5wEOTAhOYcdcP0Q</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

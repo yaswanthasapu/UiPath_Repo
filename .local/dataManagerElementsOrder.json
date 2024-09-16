@@ -1,0 +1,85 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "username&Sequence_1",
+        "url&Sequence_1",
+        "url_Dashboard&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Login_Page.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "url&Sequence_1",
+        "NameVariable&Sequence_1",
+        "Created_Successfully&Sequence_5",
+        "Created_SG&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "User_Logged&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Happy Flow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Sequence_1",
+        "Password&Sequence_1",
+        "SiteG&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Login_Page2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase_Login2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "User_Logged&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

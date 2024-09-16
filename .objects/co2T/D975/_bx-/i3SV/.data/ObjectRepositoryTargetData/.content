@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kDgpOS3bHEO98oGOeFEZqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://iportal2.iviscloud.net/dashboard" CVScreenId="909ad8f7-8161-4228-aa61-dc15d83796d7" CvTextArea="1685, 405, 55, 20" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1631, 387, 216, 61" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="dc58ddf9-8714-4abd-9d4f-70ebf3c26e15" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a0eb3236cd16f352ac451df00168f4c6.png" xmlns="">0kK_t5_3Cx0aXcuf2_Iqwzw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -5,7 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Citrix.Activities": "1.3.0",
-    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.System.Activities": "24.10.4",
     "UiPath.Testing.Activities": "[24.4.0-preview]",
     "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
   },
@@ -50,6 +50,14 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestCase_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d482c598-4002-4347-9cf8-e0e7bcf0275d",
+        "dataVariationFilePath": ".variations\\Uipath_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase_Login2.xaml"
       }
     ],
     "saveToCloud": false

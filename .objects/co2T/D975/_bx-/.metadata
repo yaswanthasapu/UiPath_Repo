@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge: iVIS",
+  "Type": "Screen",
+  "Id": "_bx-IEpTqU2bbMDkZrza4w",
+  "Reference": "DQHc7uHjPkGYpVQYIsqeWg/_bx-IEpTqU2bbMDkZrza4w",
+  "ParentRef": "DQHc7uHjPkGYpVQYIsqeWg/D975XS1MHEi2UBHgbgezkA",
+  "Created": "2024-09-16T11:20:13.1782605Z",
+  "Updated": "2024-09-16T11:20:13.1782605Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

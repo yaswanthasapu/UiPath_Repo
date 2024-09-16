@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1666,10638</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1623.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_Page_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -122,15 +122,14 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Login_Page" sap:VirtualizedContainerService.HintSize="1676,10573" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_Page" sap:VirtualizedContainerService.HintSize="512,1558.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url" />
-      <Variable x:TypeArguments="x:String" Name="CustomerName_Alert" />
-      <Variable x:TypeArguments="x:String" Name="SiteG" />
-      <Variable x:TypeArguments="x:String" Name="SGT_Alert" />
-      <Variable x:TypeArguments="x:String" Name="SGN_Alert" />
-      <Variable x:TypeArguments="x:String" Name="Project_Alert" />
-      <Variable x:TypeArguments="x:String" Name="PSG_Alert" />
+      <Variable x:TypeArguments="x:String" Name="NameVariable">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Sudhir Ivis</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -138,24 +137,20 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: iVIS" sap:VirtualizedContainerService.HintSize="1614,10485" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: iVIS" sap:VirtualizedContainerService.HintSize="449.6,1469.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1580,10245" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Boolean" Name="HomePageexist" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1229.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1518,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;url Opened&quot;]" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT loginId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1518,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[email]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT loginId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[email]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/" CVScreenId="7afaf0da-417c-4043-a7cc-ce569944f1d1" CvElementArea="1195, 524, 502, 51" CvType="InputBox" DesignTimeRectangle="1197, 526, 498, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="30280f3f-4120-4316-867a-1451353fa345" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfYAAAAzCAYAAABluSoPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAeASURBVHhe7d0HbxM9HMfx5/2/DPYeYi+JpbAElAJiCcoehbI3lHv0dfMvjntpAwlV6n4/koV6OGefT7rf+Xxp/2skSVI1DHZJkipisEuSVJHWYJ+enm4mJyebTqfTnD592mKxWCwWy5gVMpqsJrNzC4J9amqqmZiYaGZmZprZ2dnuVkmSNE7IaLKazCa7Q0+wk/pUMNAlSVoZyGyyO2buPcHOlJ70lyRJKwfZTYajJ9h5Xu9sXZKklYXsJsPRE+wsxkuSpJUnMtxglySpAga7JEkVMdglSaqIwS5JUkUMdkmSKmKwS5JUEYNdkqSKGOySJFXEYJckqSIGuyRJFTHYJUmqyD8N9kePHjVr1qxZtFy9erVbe/m8fv262bx5c7Nnz57m06dPadvnz5+b7du3N4cOHWp+/PiRti2nQdvn3DBujK0kSaVlCfaDBw829+/fby1v377t1l4+z58/b9atW5eC9OPHj2mbwS5JqsGyBPuo9jdKhOfPnz+7PxnskqQ6rNpgLxnskqQajE2wR7Bdv369efbsWbN79+70Wf6dmZlJs+uJiYlm/fr189t5pF56+fJlc+zYsWbt2rWp3tatW5upqanu/85pC9FBg5V+3LhxI9Vl/xTW6h8/ftytMSc/Hvq/b9++VHfbtm3zj/9zwwQ79S9evNhs2rQp/R//8vP379+7NZrm169faelj165d8/1mieTNmzfdGnN452HHjh3Nhw8fesZ7cnIy/T/HsmHDhnS8+XlivC9cuLCg7xwX26NvLIGU9fKxGubccyxt555jl6TVYuyCnQDgwn379u1UCMK9e/c2J06cSOF47969FKxctKnLhT/cvHkztXf06NFUj3L48OF0oX/48GG3VnuIDhKsbKcfcUyEBm1EaF+7dq1b8/f+KATllStXUrASSG1BM0j7KIN9dnY29YljPHfuXGqDEN6yZUsaJ9Ae/8fnjhw5Mj829Jugffr0aaoHgp19cQ4YO+qxz3jJMIKdvu7cuTO1wTicPHky7b/T6cwfH0HLS4ocP/XYD/1g/2fPnp2vN4pzz3jEexPRFn2hT9xISNJqsSzB3q/ks864uDOL/Pr1a3dr0zx58iTV5YL/5cuX7tbf2y9dutTdMhdy+SwVfIbPMpOLNfW2EB0kWG/dupXaLN/kj3AlWKanp9O22B/bXrx4kbYtZpD2UQY7Lx8SnmfOnEk/tyG4CdPLly93t8xhPLgJosTYcGzsn+PhuEoR7IR+fp5iX/QlfyHy27dvC25kCPe83rDnPs4x4Z9/HtzscRNQPpmQpFotS7AfP348XbzLEmECfubiXrb9/v37NEM7depUd8ucCJil+kpIEpZLhXjbthx95eaAvtCnUhk2sT+OvW2GXlqq/VAGOzNpPsdyQFu/cP78+TRW+Qw3EOR5yMaMvd/NSIx7eXMDtvVrJ1fWG/bcc+PCmLT1KepyUyZJq0FcG8fmUXxZt9/28uIeWBvmMS+Pomk7yrDBzkwwZoXMQktlf/r1u5+l2g/sj+PJn3aw3r1x48a0nTV01qpj5ho3JPlYlCUP2aXCOY5z0GDnWJg1M3b92uw3Vv22Rx9iezxJWay09VeSahTXxiqC/cGDB2m2yQyUl8don0ew+/fvH/tg53Eya9G0UT5OzrE/xjRfFwePzXlqEOvtLAEwHjwt4KkBM19+MQ/9Kgttx2P3UQY7LwmyDk9/6Bdr5JwPlgTyevRhmHPPfhmTu3fv9hxXXha7WZKkmsS1ccUHewQv67T5OjsXdMJ62GD/20fxg44lAcwLaIutycdaMvuNl9na0D9uElgH51joUx6kixllsMcSAN9UyJX1hj33jBc3D219kqTVJq6NKz7Yo165HssMke3DBjv+5uW5PxlLAop9lC+mgTaY6ba1X74wyGd5mzxeGKRP7JcX7MoX4vg5P94ydEsx7m0hWn6WY+fN9vwmhLa4gcnr9RurftvLc8/x81SGpwNtXyUsx0eSahbXxn8a7IP8StlhL+4EGG9lM3PjMTz7ZsbIzJUyimBne6xX0+4gX3f707FkPZpjYM2cr61xHHfu3Ekvx9EGNy55/5gNMw7519jiK348ig/0jc+zH/bHfhknli3ypxyjDPb4+iFjxljxNTTOBSGc1xv23INx4O33fNxon+Ol7qtXr7o1JalucW38p8G+WImAGMXF/d27dyk02G+s6zJbpI1RBDu4gSCgqBvHsNgvqPmbseQpQ8xq41gOHDiQ2mh7w55f6hLBT+EFujzUA5/P69E/fvFLPqMdZbAzjnyHnP7THssI9JWQZSYf9UZx7sESBO8T8HSC9qjDOPpVN0mrSVwb/0mwS5Kk5WWwS5JUEYNdkqSKGOySJFXEYJckqSIGuyRJFTHYJUmqiMEuSVJFDHZJkipisEuSVBGDXZKkirQGe6fTWfBXwCRJ0ngju8lw9AQ7fx2r3x8BkSRJ44nsJsPRE+z8/W7+6pezdkmSVgYym+wmw9ET7ODvZ1OB9DfgJUkaT2Q0WU1mk91hQbCD1GdKz/N6FuMtFovFYrGMVyGjyeqYqYfWYJckSStR0/wPdOIlyXmZl+4AAAAASUVORK5CYII=" InformativeScreenshot="8adb642238e11548460518d77904ca2e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, Image" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -166,18 +161,24 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1518,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[password]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="[password]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/" CVScreenId="a5d8efdf-4d9b-45e6-a375-5f19c212b72f" CvElementArea="1197, 594, 483, 54" CvType="InputBox" DesignTimeRectangle="1197, 596, 436, 50" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="931462ec-515b-4c61-a2be-3ac33be2fc66" InformativeScreenshot="e61217b2564cd71cede6fb6bf06f1152.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="a5d8efdf-4d9b-45e6-a375-5f19c212b72f" CvTextArea="1196, 563, 75, 17" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1197, 560, 498, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;" Guid="65105fed-71d2-4abf-a6b2-ece4a31ae30e" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CVScreenId="a5d8efdf-4d9b-45e6-a375-5f19c212b72f" CvTextArea="1196, 563, 75, 17" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1197, 560, 498, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" Guid="65105fed-71d2-4abf-a6b2-ece4a31ae30e" SearchSteps="FuzzySelector, CV">
+                        <uix:Target.FuzzySelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;</Literal>
+                          </InArgument>
+                        </uix:Target.FuzzySelectorArgument>
+                      </uix:Target>
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="1518,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/" CVScreenId="5ca15f59-1225-44f0-8570-3f82d2a835e2" CvElementArea="1194, 732, 503, 57" CvTextArea="1410, 751, 71, 21" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1197, 734, 498, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium submitButton css-n1nvfa' aaname='Login' check:innerText='LOGIN' /&gt;" Guid="4636988e-128f-45be-8ff7-fa4e67135b3a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfYAAAA6CAYAAABCtnvHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVXSURBVHhe7d3PSxxnGMDx/j09xJxS9JoE2vMqTaEsNrcIPUk9edhAIiVSKAhCIIeEwEIhEtAUUQgIJmLBkMOeFkIHgqwoBoWVwCyBp+8zO7O+s/vqjroz3bx8H/hA3PlBcgjffWfW2W+EYRiGYRhvhrAzDMMwjEdD2BmGYRjGo3GG/dXbupQfLMn1yUX59ucFAAAwZLTR2mpttj09YX9UfSMjExW58cNdGb19R8ZujgMAgCGjjdZWa7O13cmkwq7VHxmvOE8AAACG07WJ+52VeyrsuqT/ztTfdRAAABhO2m5tuE4q7Hq9nsvvAAB8XbTd2nCdVNj1ZrzrAAAAMNy04TqEHQAADxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2AAA8QtgBAPAIYQcAwCOEHQAAjxB2oFCvJYj+l53IzqJr+1mmpPJ8W2p7JxKG0QnaE7akuVeXjeqiTDqP61KuyMLfNQkOzHm+xOfQ+dKS8Hhfav+syh/3eo9beH/S3u/j665t8b8n3JWVWft1t5WP0VkkWHVvB3B1hB0o1CXCPrssOwet6KhomkcSBLuRw6b1+qe6VM+J6/RfNWlYbwo05M7zSEsaG0+kZB3bN+w6xzVZKNvbehF2IH+EHSjUBcM+a/aPYxwe1KT6cKpnn9JDK/xnrJynV3clafph/bVzVT5274msBe2ANzbmUtsyhd1M8/2z1BuCboQdyB9hBwp1kbDPycZetLOEJqjTzn0Scyaacdw/vZM5e9v8Ozlsb5HGZnol7jI5O9dzWT9r2HW1H6ym3xTYCDuQP8IOFCp72Esv/o1X2fuykeH+9djstjSi/UXqL5OV/ZS8+BC/uLfd583B2fqH/USax9EfzBzJ1ry9zynCDuSPsAOFyhr2qU4E5cNq31V2mxXx3U35VV+b2XTE/uL6h31XVqwrA2fdbyfsQP4IO1CorGFfktrnaEdprGcPcml9v32QhlZfM6v+9uzLWp8Ptp0nU9jNz/a9fNftA8IO5I+wA4XKGPZystLOci/esliTZnTckWz9Pi6VraPoJ2maFbRr/4yyhl2vGnT2NdNYT99vJ+xA/gg7UKiMYe8E+rJhbx/XiWxhYTfKz2Snc7/d/D0en15xIOxA/gg7UKghXLF3jrHHCrVxobAr69f0ol/Bm2m/TtiB/BF2oFAZw35zWerxk+Fyv8c+syw78YNqguAovkd+xbAbpef1nvvthB3IH2EHCpU17Jf5VPy4VK/8qXh3qC8T9u777frwmjXCDuSOsAOFyhp2s+J9ebraHsjvsXc/uMZpkGFX1oNzpCWH8RPyCDuQH8IOFCp72Af25Dkr+P0e+Tr4sBszZp/kmnw8hB3ID2EHCnWRsBs5PCu+GWy6nxWv3/y2nuw3wLAbpcfpD+gRdiA/hB0oVBJCM2FLws9u9WXrmK5vdwtz+Ha3xrF1HjPh3nbqU/RXDbua7nywj7ADeSLsQKGssJ8zveEb1Pex/ylPN+tRyHu+j13fMNS25en8bz3HDSLs0e2CoP0GgrAD+SHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4hLADAOARwg4AgEcIOwAAHiHsAAB4xBn265OLMnr7jvMAAAAwnLTd2nCdVNjLD5bkxve/OA8CAADDSdutDddJhf3V27qMjFecBwEAgOF0beJ+1HCdVNh1HlXfyMhExdT/roze+tF5AgAA8P8avfVT1GqNurY7mZ6w62j1dUmv1+v1ZjwAABgu2mhtdbJST8YZdoZhGIZhvsYR+Q/1RQnUHB8ZHgAAAABJRU5ErkJggg==" InformativeScreenshot="da385cd4c4a2d110abb017e6fc3ecd89.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, Image" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -188,591 +189,649 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="1518,9349" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Version="V3">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1014,9107" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="Created_Successfully" />
-                    <Variable x:TypeArguments="x:String" Name="Created_SG" />
-                  </Sequence.Variables>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://iportal2.iviscloud.net/dashboard" CVScreenId="fa99e1cf-986e-41bf-a601-12c38ab5aa16" ContentHash="4rq6wHrXhEi7DfjU4pW1sw" CvElementArea="1839, 117, 26, 24" CvType="ArrowButton" DesignTimeRectangle="1845, 122, 15, 17" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-role='img' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' tag='svg' class='svg-inline--fa fa-angle-down ms-2 mt-1' aaname='' /&gt;" Guid="035d6b3c-4196-4d4a-adbf-a9f6627c0df5" InformativeScreenshot="93115b422f1e43abb4d26d6a0493948a.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/ZuE5aW2Xuk2qrPFAPMXwZw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="fa99e1cf-986e-41bf-a601-12c38ab5aa16" CvElementArea="1691, 107, 43, 45" CvType="Icon" DesignTimeRectangle="1693, 109, 40, 40" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' /&gt;" Guid="e621d76b-7b15-44c5-9010-8e1bf53f78e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAtaSURBVFhH5Zj7W5RlGsf3D0hEPJIcRDBFNDwxnIbhIEeHgYEBFJdIrazV0ly9dEOuNPVSQI2DYO0WXdlWVmt5zFIED0W7ubVabV0CUmoKiGI5HNxS/O73fl8GZmBmcOuH/aEfvtec3vd5Pu/9fJ/7vp/5XUTUHPy/pL1HWd/z2wW2DB5OhUWqkvcibZR+wMTW9wwm63t+BbCeUMnQRKUiUGfEJK0RPmEmeIRmYHRIBkbx9f4QE7xC0+EbbkSANgUzdckIjeyD7w/mSNbz/s/AEi1NpAFTCOmtNWFkcCaGBWfBNTQTQ8NUKe8pF75XRPih1LDgND5QGiaFp2BGhDzwQDh7sp7/noF1VHiMkaAZnNQEV0ZzCF+HEMRaQxnV4RojxsxKxpigZIzQpMKVoC4917ow+sOoMSFpmBBqQJCOUIOAW3PcE7COUQ2Ny4B3RAaGS+SUyW2BXULS4T4jCYGTQxDhNxUxvpMof0T6BWCW/yyMmx6ngFugh1JuwWIhIwK1yU6hrVkGBdZF03fx2XAPzcIwArrQk/0j60rYiQ/qEDv+AaR6eiLd436YPNx7ZfT0QJTfZPgExsAlOL0XWOTKFRnJ+wPCDYPCipwCC6wu6fdw48AuIYwsXy2Q4s0hnGj0zCRM89dA7+UD01iC2pU70qlUDw8E+ocSWo20Mo4V+KSwZLsc1nIMHM1NkTCPfrQFtUiWd2pACAxe3oQZawfSvoyEnuIfTEhZqT5gdVwTJmoNCKc97DJRjoHjszCGWWAIn9waVJ3EhICpWqRxcomePTBn0nuPg/f02J6x+oDvo1xpuQDxtD0myi5wZDyXJ3IeU5HAqpGw1mju/oRxfsikVxf6+yF3gg/meXsqnzMIlMGIqxJAeaAxyPLk9+Jtfmfw8sLkqeE2UbYZn6lvJvO1PbYBwJGzDZgZm42R2rm4LyxdkfVgIr/AaC6tJzbpdajesgRHNz6OA3mP4K9Ls1AyNwEbk7RYG63B2hgNNiRqUZGjx55Vudioj1Aeag79PnZGQm+q6y8J1HgWGqmS/fkGAOsSM+EbM1+5UZaof0aQSabRu1neXqh7bQPaq3coMleXo+2DYlx+rwCNuzei/vX1ir7l++Z9Rbh5tFT5nOvrqfh+zKw5NuP218iwNExnZezPZwMcyayg4UZzE9/2WyaLZBnDJgYi9wEfdByroErReawMnYTuJPQAHStH17Ed6KouRTuvWx4UgOQeYHubuVcsTH7cgJKfrRltIxybioD4+RjKhO4Y2ITQidOwyN9XAf7xw+344YPtjGAx2qtK+J3AW2B3oIORNX9YQhWjo6oU6+JDMcfbB6OC9L0edqRRYalsA6z4KNsIJ2WxcTES2PFAkiE0/jOxRBOAOi73SmM4liTOxOZFc3Bk+zJc2V+owJqPlKF25xq8uiYHKwzBWJIwHXs2LMay0AcRzw07XGOgV/tKtj1J9ZwaYWuLPmDmXa2e0dVwECdLJcAzJmuwKjoYJ0tXoP7tzWjcU4gDhUtR+oc0nH1lLaO8A22Hn8f2x1KwK+8h/GtXPpoPbsWeZxdi9ewgRLMiumlSlKrpDFj2z3ixhSPgoDk5rDgD04ytTAicGoLVcWEw15Ti+pFynNpTjvKy9Thz8EW0HaWXezzbUvMy3t9djr1vlOHbwztwk9Z4c3k2oif4cx4jx5KVdBJh/uYeZrQFttTsSPFvXLaSxB0DZ8I9Igvrly3GcwYdgUtwo6oCXx/5Cw6/VYzzVS+j9fB2dFYRmNA3airx+aFKfHqwEk1Hd8JMD9cUPokXVyxAEFdTltw5cDpG8MFCrXzcCxyblAkfVjZZcns3q+I1MXPxfkU+1iUGEbgM7TVqWhN1VJfh2oGCXmCR2KNdXpWNWIZTtNGnL69FxkOLlA0svbL9udTAuXI/aSIEVgqJvg843jAXPhHpyiCOMoTo/ohMvFv+LP4UPR1mpiyBFBBFTHGt+7cQuIywZbhFyauAqzYpw+kX16D2pTwEG3I4l9rc25tHJMDS3c20C5wswGnqUzsBHsklfKUoH5tpic5jLyigAqKIwE37NhO4VIG1yBLtW7zmzEvP4KPK9ZgQM49zZRGYXZ+deUTCIUlgljZpIHBcchZ8eZpwbglpAzOw4ullaHh3KwFYNKheYII27VWBFfEBLBHu4mrc6on0u+Xr4K7lMeoegKUrtLVEZBKrSRKi43lQjM/hAM6BpS8eHZaBTXkrcKvqeYL0ACtgZbj+/lYWieeVIiGFRP2tD7jtw52YFqe2rEqP7QyYcqMlwqwaoV5gOVwGpyxQzmrOk7lEJhPTE+ainSnMZukJJ6A3Wf1srdIHXPPSJh6znAelTwwOM0W4PWD5EGlcyCUfrPqowOLlt7blc+lLCCKeLUUbo3vxvU34nrZo2l+AK3u34AdGu4sZRKIvD5GdK3PYH3ugmJXCJQ87AI5NzWH9dl59VGDxXhYeTJqPf77JUlxVTP+yV2A/0XywEOff2YjGv21E68FtjLgFtgSVhasxNsLE++2P3V9iiSkRKb2wNsAiXXw6pugfVvpRGdR5EZEBMxFmXICzbxWpG6zHAkoDpNiAUixRin3l6xGQoBYme2PZ0wjaQaPri+5A4BiekFNy4UYfW4AHm0B+jzPlovbVTQqorW9ZMOjpN4pWs4rKygw+nkWSrcZrUwc08TbAomj9PPjOZgPPsik33csEckxft/IpXD/MFvOotJilCvzNI8W4cmA7/rh8Bdy4GvcKLNeM4NyB/exgFzgqNgVBSTkYoVWf8l4mGM7r8lY8xc1WgGZuttZDW6ltLCLceAe2Yc2qlRimeF+FEW9aZG88OfKP52azzg4OgUWz9dnwUyqRY2A1j6rvJS9veWY5W0oBLcTVQ0XUVtw4vE3JxYX5q3hNH7C1+kPLmHIInWHneOQQWMdWM5pedtdmKX/iWQ9oGVQmc2XUPNi9zV26FlVvVPBcJ41OiQLZLllDikf1TraflXg8rwC+cfMxjKcZl2ALsG2zJe/daK9JEak2qWxQYFFkjAGx6YtYadJ4GFWrkURD/pbyYgOU8eQ6VLy+D0eOf4LPPv8CdV+dxfdnT+L6J++go4atZPULuPr3ffyuFnX//hKfnz2DmtpaVL69F4vzCzEpXv5RUnsXa2A/ZaPZhxU5BBZFs0eOzXyCm2oeLbIAi1ZuwaFjH6P1ehtaWlvQcL4B9fV1qK9T1UCdP3cOp7/+Al99/ZXyW119Pc7xVdU5XLj4HX76+TbM7V2oPf0lVm8ux5TEhzCKKWycNt1hZC1yCiwS6E1FO/HdhUu4fecndHeLbuNO9x3c+PEHNDY2EqxeUUMd4ahHj9ei4PQZwjYowHUN/P38eVxuuow7d27j7l0A3aruUk3N11FU+mclrYodrSUnIWsNCiyKS0zHa6+9iStXLuP27Z854R3qLrops9mMCxcu9EIf+6YOY/cfx6xDJ/BFfSOjep4r8S2aW64ysj+T8a4CLOq+cxdNl1uwa9duJMwxDYD9xcCiqNkGPLP2OZw89THa280KsALd3c3P7bh06RLqGxqw+5sGuO6txuh9NfhH4yXCfoeWq9fwH4GV63uAzeYOnDhRi7z8DYiJS7ULK/rFwBYlp2Zjc0ExjlbVoK3thgIs6uzsQktLKw5dbMawgycwkhE+c+0GWq+1KZ4VUJG5vQPVx09hS2ExDMZsu5DW+tXAIjF/fJIJCx95EiWlO1FdcxIXL11GR0cX9tRfxEhawuPASXz2oxmdt7rQ1NSMkx/VouKFSjz2xNNIMmQpBSqSnnUm5f/pfvpFwNaSKETTLuLzNFMOTLmLoXt4CaIWLMX8R5fClPkwEvWZmB1npK0IyWt7xdRpq8GhfzWwdcoR+IGT9oP6bQEn47/aikmrh/cJ1QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://iportal2.iviscloud.net/dashboard" CVScreenId="909ad8f7-8161-4228-aa61-dc15d83796d7" ContentHash="kDgpOS3bHEO98oGOeFEZqQ" CvTextArea="1685, 405, 55, 20" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1631, 387, 216, 61" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="dc58ddf9-8714-4abd-9d4f-70ebf3c26e15" InformativeScreenshot="a0eb3236cd16f352ac451df00168f4c6.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/i3SVNKM7Z0qkqDRHw6eK0g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://iportal2.iviscloud.net/dashboard" CVScreenId="1247f59c-f873-48ae-af16-6a58f2651fbb" ContentHash="8vf--W2dWkmHc-uZlC9B4w" CvElementArea="970, 603, 84, 52" CvTextArea="995, 619, 33, 17" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 605, 80, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary nextPrevBtn text-black css-120ms95' check:innerText='YES' /&gt;" Guid="a2eb2e36-ed9d-486c-9abd-903f07646fb7" InformativeScreenshot="4e06579fb1d94bb1780db7569393c173.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/Mf-yKrt_nk-ERkjO6eiAiQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1579.2,9432" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="952,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="8449cd35-daa5-4010-942d-c3b1b7abfc56" CvElementArea="1838, 115, 26, 24" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="ArrowButton" DesignTimeRectangle="1717, 89, 150, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' type='' class='dropbtn d-flex mt-1' aaname='' check:text='Veera Rangina' /&gt;" Guid="f80f1174-4208-46dd-988e-cfad4e6a047a" InformativeScreenshot="367ed5d535ce70c95c5ec6d2f1bd0e7c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="True">
-                    <uta:VerifyExpressionWithOperator.FirstExpression>
-                      <InArgument x:TypeArguments="x:String">["Veera Rangina"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.FirstExpression>
-                    <uta:VerifyExpressionWithOperator.SecondExpression>
-                      <InArgument x:TypeArguments="x:String">["Veera Rangina"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.SecondExpression>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uta:VerifyExpressionWithOperator>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Field Maintenance'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/dashboard" CVScreenId="430d9da9-e807-433a-adad-85ab7156e46f" CvElementArea="1617, 170, 26, 25" CvTextArea="1571, 173, 43, 17" CvTextArgument="CRM" CvType="ArrowButton" DesignTimeRectangle="1567, 145, 80, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' parentid='root' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' parentid='root' type='' class='dropbtn d-flex mt-1' aaname='' check:text='CRM' /&gt;" Guid="43a521a1-941b-48e8-a3b1-ed9e04008a65" InformativeScreenshot="112b11cde8ec4223f1068fdb46e2b57d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customer-Site Mgmt'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/dashboard" CVScreenId="89fdd373-088e-49a7-ace5-7b02b848072f" CvTextArea="1510, 288, 162, 18" CvTextArgument="Customer-Site Mgmt" CvType="Text" DesignTimeRectangle="14, 152, 0, 0" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='root' tag='DIV' class='dItem d-flex text-nowrap ' innertext='Customer-Site Mgmt' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' class='dItem d-flex text-nowrap ' innertext='Customer-Site Mgmt' type='' aaname='' check:text='Customer-Site Mgmt' /&gt;" Guid="030a8ea2-284e-4ecf-90cd-73f56375e239" InformativeScreenshot="05701b7ad5c50badc363a24cf6636104.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customer-Site Mgmt'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="5a98d7cb-d810-4557-ae36-22c0ba7fe31c" CvTextArea="1451, 118, 163, 20" CvTextArgument="Customer-Site Mgmt" CvType="Text" DesignTimeRectangle="1453, 114, 161, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Customer-Site Mgmt' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer-Site Mgmt' tag='SPAN' type='' class='d-none d-sm-block' check:innerText='Customer-Site Mgmt' /&gt;" Guid="bfd858b3-6c3c-459a-8a07-12ecf0bb950f" InformativeScreenshot="e1b16196dc761edd574e549b310e4ce4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
-                    <uta:VerifyExpressionWithOperator.FirstExpression>
-                      <InArgument x:TypeArguments="x:String">["Customer Site Mgmt"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.FirstExpression>
-                    <uta:VerifyExpressionWithOperator.SecondExpression>
-                      <InArgument x:TypeArguments="x:String">["Customer Site Mgmt"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.SecondExpression>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uta:VerifyExpressionWithOperator>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Site Groups'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" DesignTimeRectangle="14, 442, 67, 57" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Site Groups' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Site Groups' tag='A' type='' class='' aaname='Site Groups' check:text='Site Groups' /&gt;" Guid="5900c6bf-770a-414e-a3aa-4cd58618a6eb" InformativeScreenshot="31a76218037e7ba8bfb9d8c4094916b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Site Groups'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="fd18778f-25fb-44d1-8514-dba8b3425788" CvTextArea="136, 318, 156, 33" CvTextArgument="Site Groups" CvType="Text" DesignTimeRectangle="139, 314, 153, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H4' parentclass='customers-deshboard-cntainer mb-3' visibleinnertext='Site Groups' aaname='Site Groups' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' parentclass='customers-deshboard-cntainer mb-3' visibleinnertext='Site Groups' aaname='Site Groups' type='' class='' check:text='Site Groups' /&gt;" Guid="7e947b2e-aa32-40d3-a13a-2659866a002d" InformativeScreenshot="30927124c43113f06ec8c715b827db37.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_3" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
-                    <uta:VerifyExpressionWithOperator.FirstExpression>
-                      <InArgument x:TypeArguments="x:String">["Site Groups"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.FirstExpression>
-                    <uta:VerifyExpressionWithOperator.SecondExpression>
-                      <InArgument x:TypeArguments="x:String">["Site Groups"]</InArgument>
-                    </uta:VerifyExpressionWithOperator.SecondExpression>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uta:VerifyExpressionWithOperator>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="190cb7f0-b6cf-4880-a2a0-f0b68b5b7c0c" CvElementArea="1787, 386, 33, 33" CvTextArea="1795, 393, 16, 17" CvType="Icon" DesignTimeRectangle="1791, 388, 28, 28" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-label='Add Site Group' tag='svg' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Add Site Group' tag='svg' type='button' class='svg-inline--fa fa-circle-plus fa-2xl ms-auto addIcon' aaname='' /&gt;" Guid="9958d37c-cd68-44ac-ad0f-e24caf08801e" InformativeScreenshot="feaa6663aec37c1c8b450040a4646d40.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <Sequence DisplayName="Site Group Information in -ve" sap:VirtualizedContainerService.HintSize="952,2360.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="084bf734-0493-4765-a854-cb325e9a32b5" CvElementArea="1802, 752, 67, 48" CvTextArea="1813, 767, 46, 16" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1806, 754, 62, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='nextPrevBtn' aaname='NEXT' check:innerText='NEXT' /&gt;" Guid="468bdac8-d6cb-41e1-90ed-3eabf25b1aaf" InformativeScreenshot="b0656c77f086042428698fba0db7d2fe.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                      </uix:NClick.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <uix:NGetText DisplayName="Get Text 'Customer Name'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[CustomerName_Alert]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="ayljtWdycECzZHqhkCtiOQ" CvTextArea="158, 557, 257, 16" CvType="AnyWordGroup" DesignTimeRectangle="159, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="54590ee6-b7c1-489f-b58f-2dfa253712dd" InformativeScreenshot="919d04875f2ac16d48ac1aa3a38549b0.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/VVJxeNnKI0-UHjgWZNuutw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="158, 461, 125, 17" CvTextArgument="Customer Name" CvType="Text" DesignTimeRectangle="159, 457, 125, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-label' tag='LABEL' type='' aaname='Customer Name' check:innerText='Customer Name' /&gt;" Guid="f833d666-e9b7-4826-8561-6c9aadeacffa" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[CustomerName_Alert]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
-                    <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="387.2,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_4" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
-                      <uta:VerifyExpressionWithOperator.FirstExpression>
-                        <InArgument x:TypeArguments="x:String">["Pleaseselectthe customrername"]</InArgument>
-                      </uta:VerifyExpressionWithOperator.FirstExpression>
-                      <uta:VerifyExpressionWithOperator.SecondExpression>
-                        <InArgument x:TypeArguments="x:String">[CustomerName_Alert]</InArgument>
-                      </uta:VerifyExpressionWithOperator.SecondExpression>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uta:VerifyExpressionWithOperator>
-                    <uix:NGetText DisplayName="Get Text 'Project'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Project_Alert]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="uTW7V9p16kSKVeN67FbJRA" CvTextArea="735, 557, 188, 20" CvType="AnyWordGroup" DesignTimeRectangle="737, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="b258c35a-1317-4d67-953b-766848a64a55" InformativeScreenshot="8b33860031076b3d1ca6ddb49c6f16ef.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/T9kgHVIML026JMz0mEWxYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 461, 58, 20" CvTextArgument="Project" CvType="Text" DesignTimeRectangle="737, 457, 56, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' type='' check:innerText='Project' /&gt;" Guid="c458091d-a736-44fe-b2c8-0c96e44c67b9" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[Project_Alert]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
-                    <uix:NGetText DisplayName="Get Text 'Parent Site Group'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[PSG_Alert]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="8tsQzavsBESFBuUejIi9Ew" CvTextArea="1314, 557, 267, 20" CvType="AnyWordGroup" DesignTimeRectangle="1315, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="4c8ecbc0-771f-4069-80af-13019c102b17" InformativeScreenshot="6e02d2ce755e37cb3c5844d12859aba2.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/kDpFqySKHkSfctJENvA9ow" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="1314, 461, 137, 20" CvTextArgument="Parent Site Group" CvType="Text" DesignTimeRectangle="1315, 457, 137, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' type='' check:innerText='Parent Site Group' /&gt;" Guid="500e28a6-42f9-4794-b20a-fa235a143719" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[PSG_Alert]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
-                    <uix:NGetText DisplayName="Get Text 'Site Group Type'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SGT_Alert]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="BWXTADGHwU2z_IDsKpWAjg" CvTextArea="158, 700, 253, 20" CvType="AnyWordGroup" DesignTimeRectangle="159, 694, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="327c2af0-367a-4d78-acc0-65638a3e9c19" InformativeScreenshot="de95a254d01876d8a19cfc3813252faa.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/IA9zGojxIUKKd_shwH-Mug" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="156, 603, 124, 20" CvTextArgument="Site Group Type" CvType="Text" DesignTimeRectangle="159, 600, 122, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' type='' check:innerText='Site Group Type' /&gt;" Guid="8d41d136-efe9-48e7-94e0-42e8f691a6ec" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Warn" Message="[SGT_Alert]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
-                    <uix:NGetText DisplayName="Get Text 'Site Group Name'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SGN_Alert]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="D57Gtwswz0CtC3707qxVng" CvTextArea="735, 700, 260, 17" CvType="AnyWordGroup" DesignTimeRectangle="737, 694, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='5' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="902fce76-4d25-4724-8b4d-24ceffe7d881" InformativeScreenshot="7a7d1c19d524cf2e3778b4e43b3dc1d8.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/O7dsfwOjxkeebaaf4O16Kg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 605, 132, 16" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="737, 600, 131, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' type='' check:innerText='Site Group Name' /&gt;" Guid="84422ece-fc8e-4d8e-bcea-e08298331116" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[SGN_Alert]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:LogMessage>
-                  </Sequence>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Customer Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="62add9d2-a219-42f7-bf54-493995c23468" CvElementArea="155, 491, 553, 58" CvType="InputBox" DesignTimeRectangle="159, 493, 548, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='13' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' /&gt;" Guid="c19bf9c7-c6ae-473c-92ac-37c75d79a3eb" InformativeScreenshot="383653214e000949dd224b2672f451bb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="62add9d2-a219-42f7-bf54-493995c23468" CvTextArea="158, 461, 125, 17" CvTextArgument="Customer Name" CvType="Text" DesignTimeRectangle="159, 457, 125, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-label' tag='LABEL' type='' aaname='Customer Name' check:innerText='Customer Name' /&gt;" Guid="58150a8f-5d5b-48b2-8c22-f6001ae9a070" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cattleya B2B'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="a476b02f-1c4a-48b3-b423-530cbf1e2b25" CvTextArea="176, 261, 126, 18" CvTextArgument="Constructions" CvType="Text" DesignTimeRectangle="159, 245, 529, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='37' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='-1' tag='LI' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Cattleya B2B' check:innerText='Cattleya B2B' /&gt;" Guid="b5d19a56-83ea-493d-bcde-c367c7f30611" InformativeScreenshot="85a433c191478a3be85ac480db98e2a0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cattleya B2B'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="aff613e0-7463-46d6-a1f6-feee40b9aac3" CvElementArea="733, 491, 553, 59" CvType="InputBox" DesignTimeRectangle="737, 493, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='pk_project_id' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pk_project_id' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss34 css-17gq4vl' aaname='' check:innerText='Select Project' /&gt;" Guid="ae122049-3fe3-4694-b0f1-0a6ecde28436" InformativeScreenshot="232363a047df93b6c1a1fc2845270c81.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="aff613e0-7463-46d6-a1f6-feee40b9aac3" CvTextArea="735, 461, 58, 20" CvTextArgument="Project" CvType="Text" DesignTimeRectangle="737, 457, 56, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' type='' check:innerText='Project' /&gt;" Guid="4b31fe9a-5d2e-47a0-8826-9ca6c93ec3f3" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INB-Catelleya'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="410a3413-2c20-4824-8f8a-a4b96b376e22" CvTextArea="756, 652, 125, 20" CvTextArgument="INB-Catelleya" CvType="Text" DesignTimeRectangle="738, 637, 547, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='2' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='-1' tag='LI' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='INB-Catelleya' check:innerText='INB-Catelleya' /&gt;" Guid="6953246a-b6ae-49a2-8010-bf6c868ecc56" InformativeScreenshot="b1ad5af35fa66056308f28f523ce3c54.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Parent Site Group'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="c3dcd9ab-1d90-4755-9ffd-1d8b3553b249" CvElementArea="1310, 491, 554, 58" CvType="InputBox" DesignTimeRectangle="1315, 493, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='siteGroupId' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='siteGroupId' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss59 css-17gq4vl' aaname='' check:innerText='Select Parent Site Group' /&gt;" Guid="26af73a3-5da1-48ab-ade8-7cfc475c9a66" InformativeScreenshot="c45368384a90e4f3703d2b7532d32902.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="c3dcd9ab-1d90-4755-9ffd-1d8b3553b249" CvTextArea="1314, 461, 137, 20" CvTextArgument="Parent Site Group" CvType="Text" DesignTimeRectangle="1315, 457, 137, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' type='' check:innerText='Parent Site Group' /&gt;" Guid="0618b0a7-54fd-4ea7-a5dc-434a7d833663" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Project -'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="62e3e513-0bf6-4823-9d0f-bfe09ad61579" CvTextArea="1334, 607, 337, 21" CvTextArgument="Project - Project-Cattleya Arya Project" CvType="Text" DesignTimeRectangle="1315, 592, 548, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tabindex='0' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='0' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Project - Project-Cattleya Arya Project' check:innerText='Project - Project-Cattleya Arya Project' /&gt;" Guid="9a6fa797-e425-4972-96b1-264509fbf510" InformativeScreenshot="ebafa7747fbb7e81228918aef2687406.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Site Group Type'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="27880faa-d233-4db8-b157-5753a823500c" CvElementArea="155, 604, 553, 59" CvType="InputBox" DesignTimeRectangle="159, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='pkSiteGroupTypeId' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pkSiteGroupTypeId' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss84 css-17gq4vl' aaname='' check:innerText='Select Site Group Type' /&gt;" Guid="d894bb5d-d548-4705-8cfd-40c5ba9eb49c" InformativeScreenshot="90dbeb29f98be4066ab28d6b13ede4fe.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="27880faa-d233-4db8-b157-5753a823500c" CvTextArea="156, 575, 124, 20" CvTextArgument="Site Group Type" CvType="Text" DesignTimeRectangle="159, 571, 122, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' type='' check:innerText='Site Group Type' /&gt;" Guid="4d13f8ff-97cb-4147-a4b6-099ed9282074" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Region'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="eb03df42-54cd-4705-993a-7b3ebc4bf110" CvTextArea="179, 721, 61, 21" CvTextArgument="Region" CvType="Text" DesignTimeRectangle="159, 706, 548, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tabindex='0' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='0' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Region' check:innerText='Region' /&gt;" Guid="7604d7c6-c3ee-4427-8a1e-5154ea20af8c" InformativeScreenshot="9e170cb74f8c7926d28640448a587bbb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Site Group Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="RPA_Group" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="f9f7f637-196b-404f-92b2-faebab684f5b" CvElementArea="733, 604, 553, 59" CvType="InputBox" DesignTimeRectangle="737, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='MuiInputBase-input MuiFilledInput-input jss97 css-2bxn45' placeholder='SG_TYPE_CUSTOMER_NAME' aaname='' /&gt;" Guid="d9c9d1dd-5499-449a-83eb-628724a9bab6" InformativeScreenshot="04b292537a026e8c26e2f9c93d9d6529.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="f9f7f637-196b-404f-92b2-faebab684f5b" CvTextArea="735, 575, 132, 17" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="737, 571, 131, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' type='' check:innerText='Site Group Name' /&gt;" Guid="2495f22c-9da4-4db1-b991-f8d2b72f1704" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="RPA-Regression" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="4530d18a-884b-4e7d-a07a-fe1834aedc90" CvElementArea="1310, 605, 553, 58" CvType="InputBox" DesignTimeRectangle="1315, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='description' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='description' tag='INPUT' type='text' class='MuiInputBase-input MuiFilledInput-input jss206 css-2bxn45' placeholder='Description' aaname='Description' /&gt;" Guid="42350ea2-2123-49fa-b709-5edb2ac4dd9a" InformativeScreenshot="27bc6b9c6eb0189818b68704832c982f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="4530d18a-884b-4e7d-a07a-fe1834aedc90" CvTextArea="1314, 575, 90, 20" CvTextArgument="Description" CvType="Text" DesignTimeRectangle="1315, 571, 90, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Description' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Description' class='form-label' tag='LABEL' type='' check:innerText='Description' /&gt;" Guid="187d9a3f-2a5b-46c3-9bfe-47fd3580d524" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="5f1ac403-6095-4fac-beef-08d05300640b" CvElementArea="1802, 694, 67, 48" CvTextArea="1813, 710, 46, 16" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1806, 696, 62, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='nextPrevBtn' aaname='NEXT' check:innerText='NEXT' /&gt;" Guid="ee2fdb1f-cf78-42f8-8792-3fa53a9587d7" InformativeScreenshot="08d3d31c2ff7d7f635d15ec424e9ce7b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NGetText DisplayName="Get Text '2Review &amp; Submit'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SiteG]" Version="V3">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" DesignTimeRectangle="592, 439, 808, 379" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-12 col-md-9 col-lg-6' parentid='root' tag='DIV' aaname='' /&gt;" Guid="e173cabb-bbb6-47eb-b4e3-43d05833be86" InformativeScreenshot="3b780cc6ec058b539552635a81967c3b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target DesignTimeRectangle="1021, 312, 777, 75" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-1abj2s5' tag='SPAN' aaname='' check:innerText='2&amp;#xD;&amp;#xA;Review &amp;amp; Submit' /&gt;" Guid="165aa1c4-59d8-4452-ae63-a696c591c498" SearchSteps="FuzzySelector" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NGetText>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[SiteG]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="e92f4280-4b0e-477d-929c-adf0304b4ba0" CvElementArea="1783, 838, 86, 47" CvTextArea="1793, 852, 66, 16" CvTextArgument="CREATE" CvType="Button" DesignTimeRectangle="1786, 839, 82, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl class='nextPrevBtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='nextPrevBtn' tag='BUTTON' type='' aaname='Create' check:innerText='CREATE' /&gt;" Guid="2007b851-50bc-464d-a2b8-88bc9187cfc2" InformativeScreenshot="27f1176ecdaae2d3ae5d954821809cb0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NGetText DisplayName="Get Text 'Created UmarMHD'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Created_Successfully]" Version="V3">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="21ed9136-543e-4d72-913e-b634246c2204" CvTextArea="799, 580, 338, 20" CvType="AnyWordGroup" DesignTimeRectangle="801, 576, 336, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' visibleinnertext='Created * Site Group Successfully.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' visibleinnertext='Created * Site Group Successfully.' type='' class='m-25 success_icon' aaname='Created Site Group Successfully.' /&gt;" Guid="acc7294d-8115-4a4a-86b4-645ad52825b9" InformativeScreenshot="e20b6176659dbe8e65f70fa2de3ea1a2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="1a319792-2fab-41ca-be9d-d2d01a52a3af" CvElementArea="945, 519, 43, 44" CvType="Icon" DesignTimeRectangle="951, 523, 35, 35" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" Guid="f9c4176b-8f83-4218-b9fd-c4a0a764f58d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKNSURBVFhH7Zc/axRBGIdt8gVsBAtt7fwAamsRFLXSRlII/im0EMEmKQwKEkjUIkQNEhElESUhYEiCRq4QCUgUgwTE4grBTpSImpDilSc7M9ls3t2dmd0LV/jAj8vtvjPzcNmZndkhbcx/uVii5P6urcpMc14uzvXLgdGzsm/kpOwa6pSOWwfXP/nOde5TR30MQXLNn9/k0usB2X33yLqIb6inHe1D8JYbWBiVPfePqYP7hvb044uX3NGJK+pgsaE/H0rleH60AaqGfssolNM6rTtF5ModGjuvdlZ3GCcPVe7Uix61o1aF8TS2yDGbtA5aHW0Wb5JjHaq6XMSGcbPr4CY5Fkqt4XaF8dM4uT9rK+4VVHeOT171eo4ZHw+Lk5v40lAbVM31+REzgsi1tw/UmnTwsDi5cy9vqsVV0vfusek9YejjuFqXDh4WJ8cuQiuOze2Fp6bnhKXvTdn/6LRamw4eFifn+5raO3xCdg4eVu/ZDH54bnpN8BUj6deak/OZDF3TvbK8+lt+rPzKfcCHFydNjwkhYgQPi5PTCrNpfH1vqhOygg8/TZk7CaFiNpagX+7Cqz5TvYEVfLI0a64kxIqpv5zvM9f95p5pscGzz3Pmr4RYMaI+cyGz9XLjjmm1lSpiRJ2tHEa04rxo/+KqYgQPi5PjlKQVF6Vrpte0rkeM4GFxchzfQk9VBKEzsze8JlRZGD99jHRy0La7Emjr/Ry07U7YUvc5tSx551hVDnwX5apJL7pZcuVA66zuFFEoB606vxadVy2lcuCz/w8J/fngJQfMpqrLDO21WZmHtxywDrFQhr4NqKdddh0rI0jOwvGNUxKHEXYRzDgrzCffuc596tLHvRCi5LYHkX+VJh+TCkt1FAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NGetText>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[Created_Successfully]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="a9f04276-9b30-45d0-bae2-03190f5798ce" CvElementArea="1104, 496, 33, 32" CvType="CloseButton" DesignTimeRectangle="1114, 504, 17, 18" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='customized-dialog-title' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='customized-dialog-title' tag='path' type='' class='' aaname='' /&gt;" Guid="a414b586-45b2-48d6-887a-345bf73a9108" InformativeScreenshot="0e71c7a91f3a62cb8e559a224e463849.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NGetText DisplayName="Get Text 'Site Group Name'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Created_SG]" Version="V3">
-                    <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="b68873ca-eccb-4b91-bb28-e10a333bade4" CvTextArea="213, 510, 1172, 17" CvType="AnyWordGroup" DesignTimeRectangle="139, 490, 1725, 58" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl aria-role='row' tag='DIV' innertext='*0' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='row' tag='DIV' type='' class='MuiDataGrid-row MuiDataGrid-row--dynamicHeight' aaname='' /&gt;" Guid="efb09f73-020a-4d77-8d8d-ce72b781514e" InformativeScreenshot="341795666e1e626c887b396a6c970c76.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="2696a4bc-4868-4c9b-b5af-188ca4737019" CvTextArea="211, 398, 135, 18" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="214, 381, 288, 54" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' parentid='root' tag='DIV' type='' class='MuiDataGrid-columnHeaderTitle css-mh3zap' check:innerText='Site Group Name' /&gt;" Guid="e4625c6a-4680-45a0-8152-1fc7b33c3528" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NGetText.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NGetText>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Trace" Message="[Created_SG]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                  <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="952,895.2" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="1516.8,9343.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,652" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1014.4,9101.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Created_Successfully" />
+                          <Variable x:TypeArguments="x:String" Name="Created_SG" />
+                        </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="55eb5558-0851-45a7-8a4e-ed3ec7226814" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="Text" DesignTimeRectangle="1725, 114, 110, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Veera Rangina ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Veera Rangina ' tag='SPAN' type='' class='d-none d-sm-block' check:innerText='Veera Rangina' /&gt;" Guid="7d9eb549-486f-477c-8823-1dad2943d330" InformativeScreenshot="502d7b6499af0af0719c2cf0690802f4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="8449cd35-daa5-4010-942d-c3b1b7abfc56" CvElementArea="1838, 115, 26, 24" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="ArrowButton" DesignTimeRectangle="1717, 89, 150, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' type='' class='dropbtn d-flex mt-1' aaname='' check:text='Veera Rangina' /&gt;" Guid="f80f1174-4208-46dd-988e-cfad4e6a047a" InformativeScreenshot="367ed5d535ce70c95c5ec6d2f1bd0e7c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
                           </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">["Veera Rangina"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">["Veera Rangina"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uta:VerifyExpressionWithOperator>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Field Maintenance'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" DesignTimeRectangle="1631, 271, 216, 61" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="8a2f9719-d93d-40b7-a126-5bb895e56d17" InformativeScreenshot="7b2dae4ca8e1ea5881a1f99f216e2a37.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                            <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/dashboard" CVScreenId="430d9da9-e807-433a-adad-85ab7156e46f" CvElementArea="1617, 170, 26, 25" CvTextArea="1571, 173, 43, 17" CvTextArgument="CRM" CvType="ArrowButton" DesignTimeRectangle="1567, 145, 80, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' parentid='root' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' parentclass='dropdown d-flex align-items-center' parentid='root' type='' class='dropbtn d-flex mt-1' aaname='' check:text='CRM' /&gt;" Guid="43a521a1-941b-48e8-a3b1-ed9e04008a65" InformativeScreenshot="112b11cde8ec4223f1068fdb46e2b57d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                           </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="387.2,182.4" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customer-Site Mgmt'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="3c4b81d8-9a4b-49f5-9591-653577dff066" CvElementArea="969, 575, 84, 52" CvTextArea="995, 591, 33, 16" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 576, 80, 48" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium nextPrevBtn text-black css-120ms95' check:innerText='YES' /&gt;" Guid="ee475450-6a0e-49dc-a8f2-f27a357ae500" InformativeScreenshot="f160fd03951f1cd992841cbd43f4a493.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/dashboard" CVScreenId="89fdd373-088e-49a7-ace5-7b02b848072f" CvTextArea="1510, 288, 162, 18" CvTextArgument="Customer-Site Mgmt" CvType="Text" DesignTimeRectangle="14, 152, 0, 0" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='root' tag='DIV' class='dItem d-flex text-nowrap ' innertext='Customer-Site Mgmt' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' class='dItem d-flex text-nowrap ' innertext='Customer-Site Mgmt' type='' aaname='' check:text='Customer-Site Mgmt' /&gt;" Guid="030a8ea2-284e-4ecf-90cd-73f56375e239" InformativeScreenshot="05701b7ad5c50badc363a24cf6636104.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customer-Site Mgmt'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="5a98d7cb-d810-4557-ae36-22c0ba7fe31c" CvTextArea="1451, 118, 163, 20" CvTextArgument="Customer-Site Mgmt" CvType="Text" DesignTimeRectangle="1453, 114, 161, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Customer-Site Mgmt' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer-Site Mgmt' tag='SPAN' type='' class='d-none d-sm-block' check:innerText='Customer-Site Mgmt' /&gt;" Guid="bfd858b3-6c3c-459a-8a07-12ecf0bb950f" InformativeScreenshot="e1b16196dc761edd574e549b310e4ce4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">["Customer Site Mgmt"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">["Customer Site Mgmt"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uta:VerifyExpressionWithOperator>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Site Groups'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" DesignTimeRectangle="14, 442, 67, 57" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Site Groups' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Site Groups' tag='A' type='' class='' aaname='Site Groups' check:text='Site Groups' /&gt;" Guid="5900c6bf-770a-414e-a3aa-4cd58618a6eb" InformativeScreenshot="31a76218037e7ba8bfb9d8c4094916b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Site Groups'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="fd18778f-25fb-44d1-8514-dba8b3425788" CvTextArea="136, 318, 156, 33" CvTextArgument="Site Groups" CvType="Text" DesignTimeRectangle="139, 314, 153, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H4' parentclass='customers-deshboard-cntainer mb-3' visibleinnertext='Site Groups' aaname='Site Groups' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' parentclass='customers-deshboard-cntainer mb-3' visibleinnertext='Site Groups' aaname='Site Groups' type='' class='' check:text='Site Groups' /&gt;" Guid="7e947b2e-aa32-40d3-a13a-2659866a002d" InformativeScreenshot="30927124c43113f06ec8c715b827db37.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="952,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_3" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyExpressionWithOperator.FirstExpression>
+                            <InArgument x:TypeArguments="x:String">["Site Groups"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.FirstExpression>
+                          <uta:VerifyExpressionWithOperator.SecondExpression>
+                            <InArgument x:TypeArguments="x:String">["Site Groups"]</InArgument>
+                          </uta:VerifyExpressionWithOperator.SecondExpression>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uta:VerifyExpressionWithOperator>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev2-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="190cb7f0-b6cf-4880-a2a0-f0b68b5b7c0c" CvElementArea="1787, 386, 33, 33" CvTextArea="1795, 393, 16, 17" CvType="Icon" DesignTimeRectangle="1791, 388, 28, 28" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-label='Add Site Group' tag='svg' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Add Site Group' tag='svg' type='button' class='svg-inline--fa fa-circle-plus fa-2xl ms-auto addIcon' aaname='' /&gt;" Guid="9958d37c-cd68-44ac-ad0f-e24caf08801e" InformativeScreenshot="feaa6663aec37c1c8b450040a4646d40.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <Sequence DisplayName="Site Group Information in -ve" sap:VirtualizedContainerService.HintSize="952,2360.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="084bf734-0493-4765-a854-cb325e9a32b5" CvElementArea="1802, 752, 67, 48" CvTextArea="1813, 767, 46, 16" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1806, 754, 62, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='nextPrevBtn' aaname='NEXT' check:innerText='NEXT' /&gt;" Guid="468bdac8-d6cb-41e1-90ed-3eabf25b1aaf" InformativeScreenshot="b0656c77f086042428698fba0db7d2fe.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NGetText DisplayName="Get Text 'Customer Name'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[CustomerName_Alert]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="ayljtWdycECzZHqhkCtiOQ" CvTextArea="158, 557, 257, 16" CvType="AnyWordGroup" DesignTimeRectangle="159, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="54590ee6-b7c1-489f-b58f-2dfa253712dd" InformativeScreenshot="919d04875f2ac16d48ac1aa3a38549b0.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/VVJxeNnKI0-UHjgWZNuutw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="158, 461, 125, 17" CvTextArgument="Customer Name" CvType="Text" DesignTimeRectangle="159, 457, 125, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-label' tag='LABEL' type='' aaname='Customer Name' check:innerText='Customer Name' /&gt;" Guid="f833d666-e9b7-4826-8561-6c9aadeacffa" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[CustomerName_Alert]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="387.2,228" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_4" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                            <uta:VerifyExpressionWithOperator.FirstExpression>
+                              <InArgument x:TypeArguments="x:String">["Pleaseselectthe customrername"]</InArgument>
+                            </uta:VerifyExpressionWithOperator.FirstExpression>
+                            <uta:VerifyExpressionWithOperator.SecondExpression>
+                              <InArgument x:TypeArguments="x:String">[CustomerName_Alert]</InArgument>
+                            </uta:VerifyExpressionWithOperator.SecondExpression>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uta:VerifyExpressionWithOperator>
+                          <uix:NGetText DisplayName="Get Text 'Project'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Project_Alert]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="uTW7V9p16kSKVeN67FbJRA" CvTextArea="735, 557, 188, 20" CvType="AnyWordGroup" DesignTimeRectangle="737, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="b258c35a-1317-4d67-953b-766848a64a55" InformativeScreenshot="8b33860031076b3d1ca6ddb49c6f16ef.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/T9kgHVIML026JMz0mEWxYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 461, 58, 20" CvTextArgument="Project" CvType="Text" DesignTimeRectangle="737, 457, 56, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' type='' check:innerText='Project' /&gt;" Guid="c458091d-a736-44fe-b2c8-0c96e44c67b9" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[Project_Alert]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <uix:NGetText DisplayName="Get Text 'Parent Site Group'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[PSG_Alert]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="8tsQzavsBESFBuUejIi9Ew" CvTextArea="1314, 557, 267, 20" CvType="AnyWordGroup" DesignTimeRectangle="1315, 551, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="4c8ecbc0-771f-4069-80af-13019c102b17" InformativeScreenshot="6e02d2ce755e37cb3c5844d12859aba2.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/kDpFqySKHkSfctJENvA9ow" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="1314, 461, 137, 20" CvTextArgument="Parent Site Group" CvType="Text" DesignTimeRectangle="1315, 457, 137, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' type='' check:innerText='Parent Site Group' /&gt;" Guid="500e28a6-42f9-4794-b20a-fa235a143719" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[PSG_Alert]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <uix:NGetText DisplayName="Get Text 'Site Group Type'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SGT_Alert]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="BWXTADGHwU2z_IDsKpWAjg" CvTextArea="158, 700, 253, 20" CvType="AnyWordGroup" DesignTimeRectangle="159, 694, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="327c2af0-367a-4d78-acc0-65638a3e9c19" InformativeScreenshot="de95a254d01876d8a19cfc3813252faa.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/IA9zGojxIUKKd_shwH-Mug" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="156, 603, 124, 20" CvTextArgument="Site Group Type" CvType="Text" DesignTimeRectangle="159, 600, 122, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' type='' check:innerText='Site Group Type' /&gt;" Guid="8d41d136-efe9-48e7-94e0-42e8f691a6ec" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Warn" Message="[SGT_Alert]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <uix:NGetText DisplayName="Get Text 'Site Group Name'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SGN_Alert]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" ContentHash="D57Gtwswz0CtC3707qxVng" CvTextArea="735, 700, 260, 17" CvType="AnyWordGroup" DesignTimeRectangle="737, 694, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='5' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="902fce76-4d25-4724-8b4d-24ceffe7d881" InformativeScreenshot="7a7d1c19d524cf2e3778b4e43b3dc1d8.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/O7dsfwOjxkeebaaf4O16Kg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 605, 132, 16" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="737, 600, 131, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' type='' check:innerText='Site Group Name' /&gt;" Guid="84422ece-fc8e-4d8e-bcea-e08298331116" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[SGN_Alert]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                        </Sequence>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Customer Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="62add9d2-a219-42f7-bf54-493995c23468" CvElementArea="155, 491, 553, 58" CvType="InputBox" DesignTimeRectangle="159, 493, 548, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='13' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' /&gt;" Guid="c19bf9c7-c6ae-473c-92ac-37c75d79a3eb" InformativeScreenshot="383653214e000949dd224b2672f451bb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
                                 <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                  <uix:Target CVScreenId="3c4b81d8-9a4b-49f5-9591-653577dff066" CvTextArea="813, 518, 310, 17" CvTextArgument="Are you certain you wish to log out?" CvType="Text" DesignTimeRectangle="815, 511, 308, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' type='' class='MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-oxifsi' aaname='Are you certain you wish to log out?' check:innerText='Are you certain you wish to log out?' /&gt;" Guid="40411698-bf8a-4f4a-ad19-ab2e9999a1ab" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target CVScreenId="62add9d2-a219-42f7-bf54-493995c23468" CvTextArea="158, 461, 125, 17" CvTextArgument="Customer Name" CvType="Text" DesignTimeRectangle="159, 457, 125, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-label' tag='LABEL' type='' aaname='Customer Name' check:innerText='Customer Name' /&gt;" Guid="58150a8f-5d5b-48b2-8c22-f6001ae9a070" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cattleya B2B'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="a476b02f-1c4a-48b3-b423-530cbf1e2b25" CvTextArea="176, 261, 126, 18" CvTextArgument="Constructions" CvType="Text" DesignTimeRectangle="159, 245, 529, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='37' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='-1' tag='LI' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Cattleya B2B' check:innerText='Cattleya B2B' /&gt;" Guid="b5d19a56-83ea-493d-bcde-c367c7f30611" InformativeScreenshot="85a433c191478a3be85ac480db98e2a0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cattleya B2B'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="aff613e0-7463-46d6-a1f6-feee40b9aac3" CvElementArea="733, 491, 553, 59" CvType="InputBox" DesignTimeRectangle="737, 493, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='pk_project_id' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pk_project_id' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss34 css-17gq4vl' aaname='' check:innerText='Select Project' /&gt;" Guid="ae122049-3fe3-4694-b0f1-0a6ecde28436" InformativeScreenshot="232363a047df93b6c1a1fc2845270c81.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="aff613e0-7463-46d6-a1f6-feee40b9aac3" CvTextArea="735, 461, 58, 20" CvTextArgument="Project" CvType="Text" DesignTimeRectangle="737, 457, 56, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Project' class='form-label' tag='LABEL' type='' check:innerText='Project' /&gt;" Guid="4b31fe9a-5d2e-47a0-8826-9ca6c93ec3f3" SearchSteps="FuzzySelector, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
                             </uix:TargetAnchorable>
                           </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INB-Catelleya'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="410a3413-2c20-4824-8f8a-a4b96b376e22" CvTextArea="756, 652, 125, 20" CvTextArgument="INB-Catelleya" CvType="Text" DesignTimeRectangle="738, 637, 547, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='2' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='-1' tag='LI' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='INB-Catelleya' check:innerText='INB-Catelleya' /&gt;" Guid="6953246a-b6ae-49a2-8010-bf6c868ecc56" InformativeScreenshot="b1ad5af35fa66056308f28f523ce3c54.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Parent Site Group'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="c3dcd9ab-1d90-4755-9ffd-1d8b3553b249" CvElementArea="1310, 491, 554, 58" CvType="InputBox" DesignTimeRectangle="1315, 493, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='siteGroupId' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='siteGroupId' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss59 css-17gq4vl' aaname='' check:innerText='Select Parent Site Group' /&gt;" Guid="26af73a3-5da1-48ab-ade8-7cfc475c9a66" InformativeScreenshot="c45368384a90e4f3703d2b7532d32902.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="c3dcd9ab-1d90-4755-9ffd-1d8b3553b249" CvTextArea="1314, 461, 137, 20" CvTextArgument="Parent Site Group" CvType="Text" DesignTimeRectangle="1315, 457, 137, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Parent Site Group' class='form-label' tag='LABEL' type='' check:innerText='Parent Site Group' /&gt;" Guid="0618b0a7-54fd-4ea7-a5dc-434a7d833663" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Project -'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="62e3e513-0bf6-4823-9d0f-bfe09ad61579" CvTextArea="1334, 607, 337, 21" CvTextArgument="Project - Project-Cattleya Arya Project" CvType="Text" DesignTimeRectangle="1315, 592, 548, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tabindex='0' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='0' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Project - Project-Cattleya Arya Project' check:innerText='Project - Project-Cattleya Arya Project' /&gt;" Guid="9a6fa797-e425-4972-96b1-264509fbf510" InformativeScreenshot="ebafa7747fbb7e81228918aef2687406.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Site Group Type'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="27880faa-d233-4db8-b157-5753a823500c" CvElementArea="155, 604, 553, 59" CvType="InputBox" DesignTimeRectangle="159, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='pkSiteGroupTypeId' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pkSiteGroupTypeId' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input jss84 css-17gq4vl' aaname='' check:innerText='Select Site Group Type' /&gt;" Guid="d894bb5d-d548-4705-8cfd-40c5ba9eb49c" InformativeScreenshot="90dbeb29f98be4066ab28d6b13ede4fe.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="27880faa-d233-4db8-b157-5753a823500c" CvTextArea="156, 575, 124, 20" CvTextArgument="Site Group Type" CvType="Text" DesignTimeRectangle="159, 571, 122, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Type' class='form-label' tag='LABEL' type='' check:innerText='Site Group Type' /&gt;" Guid="4d13f8ff-97cb-4147-a4b6-099ed9282074" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Region'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="eb03df42-54cd-4705-993a-7b3ebc4bf110" CvTextArea="179, 721, 61, 21" CvTextArgument="Region" CvType="Text" DesignTimeRectangle="159, 706, 548, 45" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tabindex='0' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='0' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-10c6pm8' aaname='Region' check:innerText='Region' /&gt;" Guid="7604d7c6-c3ee-4427-8a1e-5154ea20af8c" InformativeScreenshot="9e170cb74f8c7926d28640448a587bbb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Site Group Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="RPA_Group" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="f9f7f637-196b-404f-92b2-faebab684f5b" CvElementArea="733, 604, 553, 59" CvType="InputBox" DesignTimeRectangle="737, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='MuiInputBase-input MuiFilledInput-input jss97 css-2bxn45' placeholder='SG_TYPE_CUSTOMER_NAME' aaname='' /&gt;" Guid="d9c9d1dd-5499-449a-83eb-628724a9bab6" InformativeScreenshot="04b292537a026e8c26e2f9c93d9d6529.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="f9f7f637-196b-404f-92b2-faebab684f5b" CvTextArea="735, 575, 132, 17" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="737, 571, 131, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' type='' check:innerText='Site Group Name' /&gt;" Guid="2495f22c-9da4-4db1-b991-f8d2b72f1704" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Text="RPA-Regression" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="4530d18a-884b-4e7d-a07a-fe1834aedc90" CvElementArea="1310, 605, 553, 58" CvType="InputBox" DesignTimeRectangle="1315, 607, 548, 54" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='description' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='description' tag='INPUT' type='text' class='MuiInputBase-input MuiFilledInput-input jss206 css-2bxn45' placeholder='Description' aaname='Description' /&gt;" Guid="42350ea2-2123-49fa-b709-5edb2ac4dd9a" InformativeScreenshot="27bc6b9c6eb0189818b68704832c982f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="4530d18a-884b-4e7d-a07a-fe1834aedc90" CvTextArea="1314, 575, 90, 20" CvTextArgument="Description" CvType="Text" DesignTimeRectangle="1315, 571, 90, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Description' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Description' class='form-label' tag='LABEL' type='' check:innerText='Description' /&gt;" Guid="187d9a3f-2a5b-46c3-9bfe-47fd3580d524" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="5f1ac403-6095-4fac-beef-08d05300640b" CvElementArea="1802, 694, 67, 48" CvTextArea="1813, 710, 46, 16" CvTextArgument="NEXT" CvType="Button" DesignTimeRectangle="1806, 696, 62, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='nextPrevBtn' aaname='NEXT' check:innerText='NEXT' /&gt;" Guid="ee2fdb1f-cf78-42f8-8792-3fa53a9587d7" InformativeScreenshot="08d3d31c2ff7d7f635d15ec424e9ce7b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text '2Review &amp; Submit'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[SiteG]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" DesignTimeRectangle="592, 439, 808, 379" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-12 col-md-9 col-lg-6' parentid='root' tag='DIV' aaname='' /&gt;" Guid="e173cabb-bbb6-47eb-b4e3-43d05833be86" InformativeScreenshot="3b780cc6ec058b539552635a81967c3b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="1021, 312, 777, 75" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-1abj2s5' tag='SPAN' aaname='' check:innerText='2&amp;#xD;&amp;#xA;Review &amp;amp; Submit' /&gt;" Guid="165aa1c4-59d8-4452-ae63-a696c591c498" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[SiteG]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="e92f4280-4b0e-477d-929c-adf0304b4ba0" CvElementArea="1783, 838, 86, 47" CvTextArea="1793, 852, 66, 16" CvTextArgument="CREATE" CvType="Button" DesignTimeRectangle="1786, 839, 82, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl class='nextPrevBtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='nextPrevBtn' tag='BUTTON' type='' aaname='Create' check:innerText='CREATE' /&gt;" Guid="2007b851-50bc-464d-a2b8-88bc9187cfc2" InformativeScreenshot="27f1176ecdaae2d3ae5d954821809cb0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'Created UmarMHD'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Created_Successfully]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="21ed9136-543e-4d72-913e-b634246c2204" CvTextArea="799, 580, 338, 20" CvType="AnyWordGroup" DesignTimeRectangle="801, 576, 336, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' visibleinnertext='Created * Site Group Successfully.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' visibleinnertext='Created * Site Group Successfully.' type='' class='m-25 success_icon' aaname='Created Site Group Successfully.' /&gt;" Guid="acc7294d-8115-4a4a-86b4-645ad52825b9" InformativeScreenshot="e20b6176659dbe8e65f70fa2de3ea1a2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="1a319792-2fab-41ca-be9d-d2d01a52a3af" CvElementArea="945, 519, 43, 44" CvType="Icon" DesignTimeRectangle="951, 523, 35, 35" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" Guid="f9c4176b-8f83-4218-b9fd-c4a0a764f58d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKNSURBVFhH7Zc/axRBGIdt8gVsBAtt7fwAamsRFLXSRlII/im0EMEmKQwKEkjUIkQNEhElESUhYEiCRq4QCUgUgwTE4grBTpSImpDilSc7M9ls3t2dmd0LV/jAj8vtvjPzcNmZndkhbcx/uVii5P6urcpMc14uzvXLgdGzsm/kpOwa6pSOWwfXP/nOde5TR30MQXLNn9/k0usB2X33yLqIb6inHe1D8JYbWBiVPfePqYP7hvb044uX3NGJK+pgsaE/H0rleH60AaqGfssolNM6rTtF5ModGjuvdlZ3GCcPVe7Uix61o1aF8TS2yDGbtA5aHW0Wb5JjHaq6XMSGcbPr4CY5Fkqt4XaF8dM4uT9rK+4VVHeOT171eo4ZHw+Lk5v40lAbVM31+REzgsi1tw/UmnTwsDi5cy9vqsVV0vfusek9YejjuFqXDh4WJ8cuQiuOze2Fp6bnhKXvTdn/6LRamw4eFifn+5raO3xCdg4eVu/ZDH54bnpN8BUj6deak/OZDF3TvbK8+lt+rPzKfcCHFydNjwkhYgQPi5PTCrNpfH1vqhOygg8/TZk7CaFiNpagX+7Cqz5TvYEVfLI0a64kxIqpv5zvM9f95p5pscGzz3Pmr4RYMaI+cyGz9XLjjmm1lSpiRJ2tHEa04rxo/+KqYgQPi5PjlKQVF6Vrpte0rkeM4GFxchzfQk9VBKEzsze8JlRZGD99jHRy0La7Emjr/Ry07U7YUvc5tSx551hVDnwX5apJL7pZcuVA66zuFFEoB606vxadVy2lcuCz/w8J/fngJQfMpqrLDO21WZmHtxywDrFQhr4NqKdddh0rI0jOwvGNUxKHEXYRzDgrzCffuc596tLHvRCi5LYHkX+VJh+TCkt1FAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[Created_Successfully]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="a9f04276-9b30-45d0-bae2-03190f5798ce" CvElementArea="1104, 496, 33, 32" CvType="CloseButton" DesignTimeRectangle="1114, 504, 17, 18" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='customized-dialog-title' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='customized-dialog-title' tag='path' type='' class='' aaname='' /&gt;" Guid="a414b586-45b2-48d6-887a-345bf73a9108" InformativeScreenshot="0e71c7a91f3a62cb8e559a224e463849.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'Site Group Name'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" TextString="[Created_SG]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard" CVScreenId="b68873ca-eccb-4b91-bb28-e10a333bade4" CvTextArea="213, 510, 1172, 17" CvType="AnyWordGroup" DesignTimeRectangle="139, 490, 1725, 58" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl aria-role='row' tag='DIV' innertext='*0' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='row' tag='DIV' type='' class='MuiDataGrid-row MuiDataGrid-row--dynamicHeight' aaname='' /&gt;" Guid="efb09f73-020a-4d77-8d8d-ce72b781514e" InformativeScreenshot="341795666e1e626c887b396a6c970c76.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="2696a4bc-4868-4c9b-b5af-188ca4737019" CvTextArea="211, 398, 135, 18" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="214, 381, 288, 54" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' parentid='root' tag='DIV' type='' class='MuiDataGrid-columnHeaderTitle css-mh3zap' check:innerText='Site Group Name' /&gt;" Guid="e4625c6a-4680-45a0-8152-1fc7b33c3528" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Trace" Message="[Created_SG]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <uix:NCheckState DisplayName="Check App State 'Veera Rangina'" Exists="[Logout]" sap:VirtualizedContainerService.HintSize="952,895.2" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,652" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Veera Rangina'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="55eb5558-0851-45a7-8a4e-ed3ec7226814" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="Text" DesignTimeRectangle="1725, 114, 110, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Veera Rangina ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Veera Rangina ' tag='SPAN' type='' class='d-none d-sm-block' check:innerText='Veera Rangina' /&gt;" Guid="7d9eb549-486f-477c-8823-1dad2943d330" InformativeScreenshot="502d7b6499af0af0719c2cf0690802f4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" DesignTimeRectangle="1631, 271, 216, 61" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="8a2f9719-d93d-40b7-a126-5bb895e56d17" InformativeScreenshot="7b2dae4ca8e1ea5881a1f99f216e2a37.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="387.2,182.4" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="efdc8a81-4abb-4beb-92a2-6e878aed63c4" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="3c4b81d8-9a4b-49f5-9591-653577dff066" CvElementArea="969, 575, 84, 52" CvTextArea="995, 591, 33, 16" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 576, 80, 48" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium nextPrevBtn text-black css-120ms95' check:innerText='YES' /&gt;" Guid="ee475450-6a0e-49dc-a8f2-f27a357ae500" InformativeScreenshot="f160fd03951f1cd992841cbd43f4a493.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="3c4b81d8-9a4b-49f5-9591-653577dff066" CvTextArea="813, 518, 310, 17" CvTextArgument="Are you certain you wish to log out?" CvType="Text" DesignTimeRectangle="815, 511, 308, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' type='' class='MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-oxifsi' aaname='Are you certain you wish to log out?' check:innerText='Are you certain you wish to log out?' /&gt;" Guid="40411698-bf8a-4f4a-ad19-ab2e9999a1ab" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,355.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="387.2,264.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V3">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NTakeScreenshot>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="d9b0d470-050c-4b00-a1d4-48a912451d61" CvElementArea="1838, 115, 25, 23" CvTextArea="1721, 117, 114, 21" CvTextArgument="Veera Rangina" CvType="ArrowButton" DesignTimeRectangle="1717, 89, 150, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropbtn d-flex mt-1' tag='SPAN' aaname='' check:innerText='Veera Rangina' /&gt;" Guid="63b9cdb9-95dc-4841-981d-7762f7310a37" InformativeScreenshot="8f9d28b84609adc94936f4b2b90cd8ef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,355.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,355.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="387.2,264.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V3">
+                        <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="387.2,264.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -780,44 +839,24 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="d9b0d470-050c-4b00-a1d4-48a912451d61" CvElementArea="1838, 115, 25, 23" CvTextArea="1721, 117, 114, 21" CvTextArgument="Veera Rangina" CvType="ArrowButton" DesignTimeRectangle="1717, 89, 150, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropbtn d-flex mt-1' tag='SPAN' aaname='' check:innerText='Veera Rangina' /&gt;" Guid="63b9cdb9-95dc-4841-981d-7762f7310a37" InformativeScreenshot="8f9d28b84609adc94936f4b2b90cd8ef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="8332ee88-3dfc-4441-822e-408b7842714d" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="Text" DesignTimeRectangle="1725, 114, 110, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='* ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='* ' tag='SPAN' type='' class='d-none d-sm-block' check:text='Veera Rangina' /&gt;" Guid="03555fee-be7c-4884-9737-e9bf93fe1d09" InformativeScreenshot="182d6a2352bed2021256db02c6d1652d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
                 </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,355" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="Error snaps\screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="388,265" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NTakeScreenshot>
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="https://dev1-v2.iviscloud.net/dashboard" CVScreenId="8332ee88-3dfc-4441-822e-408b7842714d" CvTextArea="1721, 118, 114, 20" CvTextArgument="Veera Rangina" CvType="Text" DesignTimeRectangle="1725, 114, 110, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='* ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='* ' tag='SPAN' type='' class='d-none d-sm-block' check:text='Veera Rangina' /&gt;" Guid="03555fee-be7c-4884-9737-e9bf93fe1d09" InformativeScreenshot="182d6a2352bed2021256db02c6d1652d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-              </uix:NCheckState.Target>
+              </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </uix:NCheckState>
+            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
