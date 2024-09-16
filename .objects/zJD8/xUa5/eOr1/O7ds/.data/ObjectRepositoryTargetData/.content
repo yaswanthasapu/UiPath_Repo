@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="D57Gtwswz0CtC3707qxVng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dev1-v2.iviscloud.net/sitegroups-dashboard/create-sitegroup" CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 700, 260, 17" CvType="AnyWordGroup" DesignTimeRectangle="737, 694, 530, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='5' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained ms-0 css-yjm4lw' /&gt;" Guid="902fce76-4d25-4724-8b4d-24ceffe7d881" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0ef26b20-1720-418e-812d-b4580c864046" CvTextArea="735, 605, 132, 16" CvTextArgument="Site Group Name" CvType="Text" DesignTimeRectangle="737, 600, 131, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Site Group Name' class='form-label' tag='LABEL' type='' check:innerText='Site Group Name' /&gt;" Guid="84422ece-fc8e-4d8e-bcea-e08298331116" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7a7d1c19d524cf2e3778b4e43b3dc1d8.png" xmlns="">0kfmSZiiYIk2Nyljcw3la3g</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

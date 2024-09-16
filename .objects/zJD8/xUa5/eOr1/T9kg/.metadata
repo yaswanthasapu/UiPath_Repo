@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Project",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "T9kgHVIML026JMz0mEWxYQ",
+  "Reference": "DQHc7uHjPkGYpVQYIsqeWg/T9kgHVIML026JMz0mEWxYQ",
+  "ParentRef": "DQHc7uHjPkGYpVQYIsqeWg/eOr1i39ADUC5Motho9NMkg",
+  "Created": "2024-05-07T10:00:45.3949467Z",
+  "Updated": "2024-05-07T10:00:45.3949467Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

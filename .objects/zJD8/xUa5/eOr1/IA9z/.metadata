@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Site Group Type",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "IA9zGojxIUKKd_shwH-Mug",
+  "Reference": "DQHc7uHjPkGYpVQYIsqeWg/IA9zGojxIUKKd_shwH-Mug",
+  "ParentRef": "DQHc7uHjPkGYpVQYIsqeWg/eOr1i39ADUC5Motho9NMkg",
+  "Created": "2024-05-07T10:03:02.9152316Z",
+  "Updated": "2024-05-07T10:03:02.9152316Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
