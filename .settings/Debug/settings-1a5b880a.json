@@ -1,4 +1,4 @@
-{
+﻿{
   "UiPath.UiAutomation.Activities.Generic.DelayBeforeMS": "200",
   "UiPath.UiAutomation.Activities.Generic.DelayAfterMS": "300",
   "UiPath.UiAutomation.Activities.Generic.TimeoutMS": "30000",
@@ -39,5 +39,6 @@
   "UiPath.UiAutomation.Activities.MouseEvents.SimulateClick": "False",
   "UiPath.UiAutomation.Activities.MouseEvents.SimulateHover": "False",
   "UiPath.UiAutomation.Activities.Screenshot.WaitBefore": "300",
-  "UiPath.UiAutomation.Activities.OtherActivities.ExecutionWorld": "Isolated"
+  "UiPath.UiAutomation.Activities.OtherActivities.ExecutionWorld": "Isolated",
+  "UiPath.UiAutomation.Activities.SAP.EnableSapMonitoring": "False"
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A42iNg3UxUmldtaivZ83Zw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" CvElementArea="971, 602, 76, 46" CvTextArea="992, 617, 31, 15" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 604, 72, 43" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary nextPrevBtn text-black css-120ms95' aaname='Yes' check:innerText='YES' /&gt;" Guid="49d5e142-26fc-4c6c-bfb2-4cfc5071ed57" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" CvTextArea="827, 549, 281, 17" CvTextArgument="Are you certain you wish to log out?" CvType="Text" DesignTimeRectangle="830, 545, 278, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' type='' class='MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-oxifsi' aaname='Are you certain you wish to log out?' check:innerText='Are you certain you wish to log out?' /&gt;" Guid="b1abae23-157e-4d24-a1f1-acf70f351d72" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3cabc6b52fb8f0c3e8346eca251fb8b9.png" xmlns="">0_naRUMXOHUKl3nBmR8HJxQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

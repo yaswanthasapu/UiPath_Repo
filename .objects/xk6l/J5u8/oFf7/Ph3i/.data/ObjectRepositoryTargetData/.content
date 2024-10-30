@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YRoqSAwrkUGcLJbIE2o3rQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvElementArea="1191, 540, 510, 45" CvType="InputBox" DesignTimeRectangle="1194, 542, 505, 42" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="bb776fa7-63ca-4248-a617-9ebb7ae7b7bf" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 514, 131, 13" CvTextArgument="Email or Username" CvType="Text" DesignTimeRectangle="1194, 509, 505, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label d-block' aaname='Email or Username' check:innerText='Email or Username' /&gt;" Guid="6caf8fec-b952-45c3-86fc-9c1123abb334" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b2810ff60bf425f15133a1dbbfebde77.png" xmlns="">0VHk-aMNkg0K-G6l1PHtWhg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

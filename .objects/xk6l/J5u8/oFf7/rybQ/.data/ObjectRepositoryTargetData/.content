@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zZZnm8cAlk6fzK6UWYU83g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvElementArea="1190, 627, 507, 48" CvType="InputBox" DesignTimeRectangle="1194, 629, 449, 45" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="a54bb0d4-f684-4b1c-b70e-05469e62650f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 601, 67, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1194, 597, 505, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;" Guid="85da28a1-f6f9-4120-83ed-1c96ab0d9cd2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6a4b8e416f3258362040186f9211ba66.png" xmlns="">0-JQT6IY5BkeOMfKdZJpwKA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

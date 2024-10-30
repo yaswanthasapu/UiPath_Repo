@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BPhW-T0BkE-0R1gb_qel3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uat1.iviscloud.net/usersDashboard" CVScreenId="866cbccd-3933-4241-96a1-71e2d9811be5" DesignTimeRectangle="178, 511, 212, 27" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='*' class='MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor' /&gt;" Guid="15aa276e-8428-4b12-81a2-a7c576afa7b8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cc43f101931eeea6c650c8cd3cb6af8a.png" xmlns="">0rHZQWmTjs0-qvU_A_xNyXQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

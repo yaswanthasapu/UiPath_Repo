@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EihCYtZ19k2t6ZczUliHIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/usersDashboard/editUser/2499" CVScreenId="9acbd1bf-65d3-4abf-bece-e6f8ad0770c0" CvElementArea="334, 368, 647, 51" CvType="InputBox" DesignTimeRectangle="338, 426, 641, 48" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='firstName' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='firstName' type='text' tag='INPUT' class='MuiInputBase-input MuiFilledInput-input jss97 css-2bxn45' placeholder='First Name' aaname='' /&gt;" Guid="e12d5d4b-c1de-4c0a-a12e-5d8d98abc575" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9acbd1bf-65d3-4abf-bece-e6f8ad0770c0" CvTextArea="122, 460, 74, 13" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="122, 425, 203, 71" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class=' pb-3' aaname='First Name' check:innerText='First Name' /&gt;" Guid="913e16bc-ac91-4d5d-b71a-caf8730b1edd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d730bcbde03aad7b2e3031b065a726fa.png" xmlns="">07t_wyq7zAkKdieF98oYeDQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

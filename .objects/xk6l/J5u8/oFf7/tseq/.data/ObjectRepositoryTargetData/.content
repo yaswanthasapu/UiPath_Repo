@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IXY5Lytif0SDBQhnbDxqWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvElementArea="1191, 729, 509, 51" CvTextArea="1414, 745, 63, 18" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1194, 731, 505, 48" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' check:innerText='LOGIN' /&gt;" Guid="805902da-0be4-493f-adeb-608c3c62f9a7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="106a042ff047202ea7452cd9c5d45538.png" xmlns="">08OdQQjWIt02PhHlOVse2Sw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

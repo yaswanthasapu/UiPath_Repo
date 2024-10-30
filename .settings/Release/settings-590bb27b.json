@@ -24,5 +24,6 @@
   "UiPath.UiAutomation.Activities.MicrosoftAzureComputerVisionOCR.Scale": "1",
   "UiPath.UiAutomation.Activities.MicrosoftAzureComputerVisionOCR.Language": "AutoDetect",
   "UiPath.OCR.Activities.ExtendedLanguagesOCR.Endpoint": "https://du.uipath.com/extended-ocr",
-  "UiPath.OCR.Activities.ExtendedLanguagesOCR.ApiKey": ""
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.ApiKey": "",
+  "UiPath.OCR.Activities.UiPathScreenOCR.UseAccents": "False"
 }

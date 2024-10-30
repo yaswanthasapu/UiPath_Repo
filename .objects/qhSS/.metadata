@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: iVIS(1)",
+  "Type": "App",
+  "Id": "qhSSwtQPuk6x9EzFtN3TlQ",
+  "Reference": "DQHc7uHjPkGYpVQYIsqeWg/qhSSwtQPuk6x9EzFtN3TlQ",
+  "Created": "2024-10-29T06:04:37.6535133Z",
+  "Updated": "2024-10-29T06:04:37.6535133Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

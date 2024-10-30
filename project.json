@@ -5,9 +5,10 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Citrix.Activities": "1.3.0",
-    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.DocumentUnderstanding.Activities": "2.12.0",
+    "UiPath.System.Activities": "24.10.6",
     "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
+    "UiPath.UIAutomation.Activities": "24.10.7"
   },
   "webServices": [],
   "entitiesStores": [],

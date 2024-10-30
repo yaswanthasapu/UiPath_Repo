@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6gcqiCe21U-PuM0a4ZOVEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="4aafd492-1613-4807-97f4-2a95a07eed3f" CvElementArea="1864, 115, 24, 21" CvTextArea="1786, 119, 76, 15" CvTextArgument="Sudhir Ivis" CvType="ArrowButton" DesignTimeRectangle="1782, 92, 108, 72" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropbtn d-flex mt-1 cursor-pointer' tag='SPAN' aaname='' check:innerText='Sudhir Ivis' /&gt;" Guid="91cc951b-0088-47f2-bb9c-611710c97952" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4526a315b609bf0afd701857ff77399c.png" xmlns="">0tQsF1mExm0ecVZgqcNHubw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

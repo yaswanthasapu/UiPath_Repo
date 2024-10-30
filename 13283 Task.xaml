@@ -1,0 +1,719 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_13283_Task" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="_13283_Task_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.IntelligentOCR.DataExtraction</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Citrix.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Use Browser Edge to interact with iVIS application, perform login, user management, and logout actions" DisplayName="_13283_Task" sap:VirtualizedContainerService.HintSize="1452.0000000000002,1246.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://uat1.iviscloud.net/" Name="url" />
+      <Variable x:TypeArguments="x:String" Name="count" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: iVIS" sap:VirtualizedContainerService.HintSize="585.6,1192" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" OutUiElement="[outputElement]" ScopeGuid="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,952" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="firstName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="518.4,122.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <If Condition="False" sap:VirtualizedContainerService.HintSize="518.4,443.2" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="483.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="userProfile" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Sudhir Ivis'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.ActivateBefore>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <Literal x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="True" />
+                        </InArgument>
+                      </uix:NClick.ActivateBefore>
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="4aafd492-1613-4807-97f4-2a95a07eed3f" ContentHash="6gcqiCe21U-PuM0a4ZOVEQ" CvElementArea="1864, 115, 24, 21" CvTextArea="1786, 119, 76, 15" CvTextArgument="Sudhir Ivis" CvType="ArrowButton" DesignTimeRectangle="1782, 92, 108, 72" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropbtn d-flex mt-1 cursor-pointer' tag='SPAN' aaname='' check:innerText='Sudhir Ivis' /&gt;" Guid="91cc951b-0088-47f2-bb9c-611710c97952" InformativeScreenshot="4526a315b609bf0afd701857ff77399c.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/PLFhbqDOCEyF_qF-5rhHOA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.ActivateBefore>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <Literal x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="Literal`1_2" Value="True" />
+                        </InArgument>
+                      </uix:NClick.ActivateBefore>
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="ea545352-db16-448a-998c-556b6f99c044" ContentHash="Lc4xISHLLk6pjyg569Kgig" CvTextArea="1726, 381, 50, 17" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1678, 364, 194, 55" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='7' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="4413a914-f90d-4a68-818b-9f915fe27bba" InformativeScreenshot="134a9077437320835aa0b64bde4a9c48.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/MUPUDyfhi0iCNb50V6pQ5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" ContentHash="A42iNg3UxUmldtaivZ83Zw" CvElementArea="971, 602, 76, 46" CvTextArea="992, 617, 31, 15" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 604, 72, 43" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary nextPrevBtn text-black css-120ms95' aaname='Yes' check:innerText='YES' /&gt;" Guid="49d5e142-26fc-4c6c-bfb2-4cfc5071ed57" InformativeScreenshot="3cabc6b52fb8f0c3e8346eca251fb8b9.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/RChkhDzI0E2YodsvUCZN8Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" CvTextArea="827, 549, 281, 17" CvTextArgument="Are you certain you wish to log out?" CvType="Text" DesignTimeRectangle="830, 545, 278, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' type='' class='MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-oxifsi' aaname='Are you certain you wish to log out?' check:innerText='Are you certain you wish to log out?' /&gt;" Guid="b1abae23-157e-4d24-a1f1-acf70f351d72" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="sudhir.i" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="YRoqSAwrkUGcLJbIE2o3rQ" CvElementArea="1191, 540, 510, 45" CvType="InputBox" DesignTimeRectangle="1194, 542, 505, 42" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="bb776fa7-63ca-4248-a617-9ebb7ae7b7bf" InformativeScreenshot="b2810ff60bf425f15133a1dbbfebde77.png" IsResponsive="True" Reference="DQHc7uHjPkGYpVQYIsqeWg/Ph3iaQBEdkiVmMGfZIthEg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 514, 131, 13" CvTextArgument="Email or Username" CvType="Text" DesignTimeRectangle="1194, 509, 505, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label d-block' aaname='Email or Username' check:innerText='Email or Username' /&gt;" Guid="6caf8fec-b952-45c3-86fc-9c1123abb334" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" IsPassword="True" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="Ivis@123" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="zZZnm8cAlk6fzK6UWYU83g" CvElementArea="1190, 627, 507, 48" CvType="InputBox" DesignTimeRectangle="1194, 629, 449, 45" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="a54bb0d4-f684-4b1c-b70e-05469e62650f" InformativeScreenshot="6a4b8e416f3258362040186f9211ba66.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/rybQSKCc-EmU_ZsZaP42Aw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 601, 67, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1194, 597, 505, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;" Guid="85da28a1-f6f9-4120-83ed-1c96ab0d9cd2" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="IXY5Lytif0SDBQhnbDxqWQ" CvElementArea="1191, 729, 509, 51" CvTextArea="1414, 745, 63, 18" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1194, 731, 505, 48" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' check:innerText='LOGIN' /&gt;" Guid="805902da-0be4-493f-adeb-608c3c62f9a7" InformativeScreenshot="106a042ff047202ea7452cd9c5d45538.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/tseq26hG20yGnXTcBR1VBQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,108" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="sudhir.i" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="YRoqSAwrkUGcLJbIE2o3rQ" CvElementArea="1191, 540, 510, 45" CvType="InputBox" DesignTimeRectangle="1194, 542, 505, 42" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="bb776fa7-63ca-4248-a617-9ebb7ae7b7bf" InformativeScreenshot="b2810ff60bf425f15133a1dbbfebde77.png" IsResponsive="True" Reference="DQHc7uHjPkGYpVQYIsqeWg/Ph3iaQBEdkiVmMGfZIthEg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 514, 131, 13" CvTextArgument="Email or Username" CvType="Text" DesignTimeRectangle="1194, 509, 505, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label d-block' aaname='Email or Username' check:innerText='Email or Username' /&gt;" Guid="6caf8fec-b952-45c3-86fc-9c1123abb334" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" IsPassword="True" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="Ivis@123" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="zZZnm8cAlk6fzK6UWYU83g" CvElementArea="1190, 627, 507, 48" CvType="InputBox" DesignTimeRectangle="1194, 629, 449, 45" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="a54bb0d4-f684-4b1c-b70e-05469e62650f" InformativeScreenshot="6a4b8e416f3258362040186f9211ba66.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/rybQSKCc-EmU_ZsZaP42Aw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 601, 67, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1194, 597, 505, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" Guid="85da28a1-f6f9-4120-83ed-1c96ab0d9cd2" SearchSteps="FuzzySelector, CV">
+                                <uix:Target.FuzzySelectorArgument>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;</Literal>
+                                  </InArgument>
+                                </uix:Target.FuzzySelectorArgument>
+                              </uix:Target>
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="IXY5Lytif0SDBQhnbDxqWQ" CvElementArea="1191, 729, 509, 51" CvTextArea="1414, 745, 63, 18" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1194, 731, 505, 48" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' check:innerText='LOGIN' /&gt;" Guid="805902da-0be4-493f-adeb-608c3c62f9a7" InformativeScreenshot="106a042ff047202ea7452cd9c5d45538.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/tseq26hG20yGnXTcBR1VBQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="518.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="483.2,108" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="sudhir.i" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="YRoqSAwrkUGcLJbIE2o3rQ" CvElementArea="1191, 540, 510, 45" CvType="InputBox" DesignTimeRectangle="1194, 542, 505, 42" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='loginId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loginId' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng' placeholder='Email or Username' aaname='' /&gt;" Guid="bb776fa7-63ca-4248-a617-9ebb7ae7b7bf" InformativeScreenshot="b2810ff60bf425f15133a1dbbfebde77.png" IsResponsive="True" Reference="DQHc7uHjPkGYpVQYIsqeWg/Ph3iaQBEdkiVmMGfZIthEg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 514, 131, 13" CvTextArgument="Email or Username" CvType="Text" DesignTimeRectangle="1194, 509, 505, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label d-block' aaname='Email or Username' check:innerText='Email or Username' /&gt;" Guid="6caf8fec-b952-45c3-86fc-9c1123abb334" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" IsPassword="True" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="Ivis@123" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="zZZnm8cAlk6fzK6UWYU83g" CvElementArea="1190, 627, 507, 48" CvType="InputBox" DesignTimeRectangle="1194, 629, 449, 45" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1' aaname='' /&gt;" Guid="a54bb0d4-f684-4b1c-b70e-05469e62650f" InformativeScreenshot="6a4b8e416f3258362040186f9211ba66.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/rybQSKCc-EmU_ZsZaP42Aw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" CvTextArea="1192, 601, 67, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1194, 597, 505, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label d-block' check:innerText='Password' /&gt;" Guid="85da28a1-f6f9-4120-83ed-1c96ab0d9cd2" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/" CVScreenId="4aa4aef4-a6fe-4df8-8efa-2a51d81d0bb7" ContentHash="IXY5Lytif0SDBQhnbDxqWQ" CvElementArea="1191, 729, 509, 51" CvTextArea="1414, 745, 63, 18" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="1194, 731, 505, 48" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye' parentid='root' tag='DIV' aaname='' check:innerText='LOGIN' /&gt;" Guid="805902da-0be4-493f-adeb-608c3c62f9a7" InformativeScreenshot="106a042ff047202ea7452cd9c5d45538.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/tseq26hG20yGnXTcBR1VBQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Sequence DisplayName="User Mng" sap:VirtualizedContainerService.HintSize="518.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="changeFN" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Administration'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" DesignTimeRectangle="14, 958, 68, 34" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-1uwabd6' aaname='' check:text='Administration' /&gt;" Guid="a9ffbea2-590a-458c-8022-3a57976209c4" InformativeScreenshot="f77a9a6c97f9b3d06997bac9c6d0332a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'User Management'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" DesignTimeRectangle="32, 979, 53, 53" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='User Management' tag='A' type='' class='list-check' aaname='User Management' check:text='User Management' /&gt;" Guid="cace7b19-370f-49d6-b752-beb60b947655" InformativeScreenshot="5ca9278c547c32148338131ade419c9f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.FullSelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">&lt;webctrl aria-label='User Management' tag='A' /&gt;</Literal>
+                      </InArgument>
+                    </uix:TargetAnchorable.FullSelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text '1–10 of 444'" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" TextString="[count]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard" CVScreenId="31e5b208-d8d1-4bf5-bc7d-e8c86cf355a8" CvTextArea="1674, 955, 85, 15" CvType="AnyWordGroup" DesignTimeRectangle="1674, 952, 84, 23" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='simple-tabpanel-0' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='simple-tabpanel-0' tag='P' class='MuiTablePagination-displayedRows css-1bagbza' /&gt;" Guid="15884ef9-d5a8-4018-b371-8ec2a163b253" ImageBase64="" InformativeScreenshot="0d0024e2160f353a9f66300ca624b41e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log count value" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Count : &quot; + count]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="449.6,1765.6" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_3" NumberOfTimes="5" StartAt="1">
+                <ui:RepeatNumberOfTimesX.Body>
+                  <ActivityAction x:TypeArguments="x:Int32">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1574.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contains'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="-" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard" CVScreenId="05de440d-838f-448b-80f9-3b2d12b5382e" CvElementArea="399, 514, 163, 34" CvType="InputBox" DesignTimeRectangle="401, 519, 159, 27" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl class='MuiInputBase-input MuiInput-input css-mnn31' tag='INPUT' type='text' aaname='Contains' /&gt;" Guid="b0149e41-285a-4269-98da-ca24a439da2b" InformativeScreenshot="a889d1b41f922ae9a16239cd2afd120c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contains'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="[&quot;[k(Tab)]&quot; + &quot;[k(Enter)]&quot;]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard" CVScreenId="05de440d-838f-448b-80f9-3b2d12b5382e" CvElementArea="399, 514, 163, 34" CvType="InputBox" DesignTimeRectangle="401, 519, 159, 27" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl class='MuiInputBase-input MuiInput-input css-mnn31' tag='INPUT' type='text' aaname='Contains' /&gt;" Guid="b0149e41-285a-4269-98da-ca24a439da2b" InformativeScreenshot="a889d1b41f922ae9a16239cd2afd120c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard/editUser/2499" DesignTimeRectangle="1758, 308, 42, 43" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl idx='2' isleaf='1' parentid='simple-tabpanel-0' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='simple-tabpanel-0' tag='SPAN' class='MuiTouchRipple-root css-w0pj6f' aaname='' /&gt;" Guid="f8ccb513-c18a-450d-9306-19dd2fbe6f6d" InformativeScreenshot="a772820541e5fc2e7230089d32d6d76f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="bb3b4563-83a8-47e9-8f5b-05930e875269" CvTextArea="1821, 320, 33, 17" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1823, 316, 32, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Edit' parentid='simple-tabpanel-0' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Edit' parentid='simple-tabpanel-0' tag='SPAN' type='' class='MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-zvkca' check:innerText='Edit' /&gt;" Guid="a08bfdaa-6155-4f38-9752-3f30b1c7a7d0" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Get Text 'First Name'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" TextString="[firstName]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard/editUser/2499" CVScreenId="9acbd1bf-65d3-4abf-bece-e6f8ad0770c0" ContentHash="EihCYtZ19k2t6ZczUliHIw" CvElementArea="334, 368, 647, 51" CvType="InputBox" DesignTimeRectangle="338, 426, 641, 48" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='firstName' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='firstName' type='text' tag='INPUT' class='MuiInputBase-input MuiFilledInput-input jss97 css-2bxn45' placeholder='First Name' aaname='' /&gt;" Guid="e12d5d4b-c1de-4c0a-a12e-5d8d98abc575" InformativeScreenshot="d730bcbde03aad7b2e3031b065a726fa.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/Df5uudqp-UyQRv7DWWWQLw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="9acbd1bf-65d3-4abf-bece-e6f8ad0770c0" CvTextArea="122, 460, 74, 13" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="122, 425, 203, 71" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class=' pb-3' aaname='First Name' check:innerText='First Name' /&gt;" Guid="913e16bc-ac91-4d5d-b71a-caf8730b1edd" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NGetText>
+                      <uast:FindAndReplace DisplayName="Find and Replace" sap:VirtualizedContainerService.HintSize="382.4,277.6" sap2010:WorkflowViewState.IdRef="FindAndReplace_1" MatchCase="False" ReplaceWith=" " Result="[changeFN]" Source="[firstName]" ValueToFind="-">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uast:FindAndReplace>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CBI-Branches'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Text="[changeFN]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="uat1.iviscloud.net/usersDashboard/editUser/2498" CVScreenId="25ded12d-3086-4fce-ae70-6326aaeeabdb" DesignTimeRectangle="338, 426, 641, 48" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='firstName' tableRow='1' tag='INPUT' /&gt;" Guid="9ebdd8d2-4990-4ed8-ae0d-3073f95a1eb6" InformativeScreenshot="794100a8f5f999e454d5827ec905e8a7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="uat1.iviscloud.net/usersDashboard/editUser/2498" CVScreenId="733231eb-4e49-4642-a2b2-cee49b4fd590" DesignTimeRectangle="1844, 245, 29, 32" DesignTimeScaleFactor="1.125" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='svg' type='button' /&gt;" Guid="85343f08-774f-4573-9fa8-ceb7dc8dee1f" InformativeScreenshot="ee7e8bec5e5486ab4a5fc08bc5bb3001.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382.4,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SAVE'" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/usersDashboard/editUser/2499" CVScreenId="5a13648f-76b1-4bda-8d0b-744cdf216cf2" CvElementArea="1812, 918, 58, 43" CvTextArea="1820, 932, 40, 16" CvTextArgument="SAVE" CvType="Button" DesignTimeRectangle="1815, 921, 53, 39" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl class='nextPrevBtn' parentid='simple-tabpanel-0' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='nextPrevBtn' parentid='simple-tabpanel-0' tag='BUTTON' type='' aaname='SAVE' check:innerText='SAVE' /&gt;" Guid="c4efc8c4-b103-405f-ad1f-3aaa24fbf511" InformativeScreenshot="84ac148b0dc0edd6ce46bfa56540cb55.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:RepeatNumberOfTimesX.Body>
+              </ui:RepeatNumberOfTimesX>
+            </Sequence>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="518.4,211.2" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="483.2,108" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sudhir Ivis'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="4aafd492-1613-4807-97f4-2a95a07eed3f" ContentHash="6gcqiCe21U-PuM0a4ZOVEQ" CvElementArea="1864, 115, 24, 21" CvTextArea="1786, 119, 76, 15" CvTextArgument="Sudhir Ivis" CvType="ArrowButton" DesignTimeRectangle="1782, 92, 108, 72" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dropbtn d-flex mt-1 cursor-pointer' tag='SPAN' aaname='' check:innerText='Sudhir Ivis' /&gt;" Guid="91cc951b-0088-47f2-bb9c-611710c97952" InformativeScreenshot="4526a315b609bf0afd701857ff77399c.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/PLFhbqDOCEyF_qF-5rhHOA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="ea545352-db16-448a-998c-556b6f99c044" ContentHash="Lc4xISHLLk6pjyg569Kgig" CvTextArea="1726, 381, 50, 17" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1678, 364, 194, 55" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='7' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='dItem d-flex' parentid='root' tag='DIV' aaname='' check:innerText='Logout' /&gt;" Guid="4413a914-f90d-4a68-818b-9f915fe27bba" InformativeScreenshot="134a9077437320835aa0b64bde4a9c48.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/MUPUDyfhi0iCNb50V6pQ5g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="59fff240-21c6-4995-a99f-cf8ea04b697c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uat1.iviscloud.net/alarms" CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" ContentHash="A42iNg3UxUmldtaivZ83Zw" CvElementArea="971, 602, 76, 46" CvTextArea="992, 617, 31, 15" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="973, 604, 72, 43" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary nextPrevBtn text-black css-120ms95' aaname='Yes' check:innerText='YES' /&gt;" Guid="49d5e142-26fc-4c6c-bfb2-4cfc5071ed57" InformativeScreenshot="3cabc6b52fb8f0c3e8346eca251fb8b9.png" Reference="DQHc7uHjPkGYpVQYIsqeWg/RChkhDzI0E2YodsvUCZN8Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='iVIS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="2b512b3c-baa3-4491-9462-b18710a23b7b" CvTextArea="827, 549, 281, 17" CvTextArgument="Are you certain you wish to log out?" CvType="Text" DesignTimeRectangle="830, 545, 278, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='alert-dialog-description' tag='P' type='' class='MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-oxifsi' aaname='Are you certain you wish to log out?' check:innerText='Are you certain you wish to log out?' /&gt;" Guid="b1abae23-157e-4d24-a1f1-acf70f351d72" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="d4827e37315d2470a3216965b471c9e7.jpg" Selector="&lt;html app='msedge.exe' title='iVIS' /&gt;" Title="iVIS" Url="[url]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
